@@ -11,7 +11,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12601.html"
           ],
-          "quote_text": "住宅ローン減税の床面積要件を緩和します"
+          "quote_text": "住宅ローン減税の床面積要件を緩和します",
+          "policy_id": "policy_009"
         },
         {
           "title": "土地等の実質的支配者情報の把握と公開",
@@ -19,7 +20,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12582.html"
           ],
-          "quote_text": "国土全域で土地等の実質的支配者情報等を把握し国民に速やかに公開します。"
+          "quote_text": "国土全域で土地等の実質的支配者情報等を把握し国民に速やかに公開します。",
+          "policy_id": "policy_010"
         },
         {
           "title": "日本版DBSの導入",
@@ -27,7 +29,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12615.html"
           ],
-          "quote_text": "教育・保育・医療等の業務従事者の性犯罪歴を確認する仕組み（日本版DBS）を導入"
+          "quote_text": "教育・保育・医療等の業務従事者の性犯罪歴を確認する仕組み（日本版DBS）を導入",
+          "policy_id": "policy_011"
         },
         {
           "title": "デジタルリテラシー教育の早期必修化",
@@ -35,7 +38,8 @@
           "sources": [
             "https://miki-yamada.com/policy"
           ],
-          "quote_text": "デジタルリテラシー教育の早期必修化を実施します"
+          "quote_text": "デジタルリテラシー教育の早期必修化を実施します",
+          "policy_id": "policy_012"
         },
         {
           "title": "投機目的の不動産取得制限",
@@ -43,7 +47,8 @@
           "sources": [
             "https://miki-yamada.com/policy"
           ],
-          "quote_text": "投機目的の不動産取得制限を行います"
+          "quote_text": "投機目的の不動産取得制限を行います",
+          "policy_id": "policy_013"
         },
         {
           "title": "燃料油価格の定額引下げ",
@@ -51,7 +56,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12572.html"
           ],
-          "quote_text": "燃料油価格の定額引下げ"
+          "quote_text": "燃料油価格の定額引下げ",
+          "policy_id": "policy_014"
         },
         {
           "title": "憲法への「自衛隊」明記",
@@ -59,7 +65,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12605.html"
           ],
-          "quote_text": "憲法改正により「自衛隊」を明記"
+          "quote_text": "憲法改正により「自衛隊」を明記",
+          "policy_id": "policy_015"
         },
         {
           "title": "自衛隊員の給与水準引き上げ",
@@ -67,7 +74,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12605.html"
           ],
-          "quote_text": "自衛隊員の危険な任務に見合った給与水準や居住環境の改善"
+          "quote_text": "自衛隊員の危険な任務に見合った給与水準や居住環境の改善",
+          "policy_id": "policy_016"
         },
         {
           "title": "AI・データサイエンス教育の早期必修化",
@@ -75,7 +83,8 @@
           "sources": [
             "https://miki-yamada.com/blog/12591.html"
           ],
-          "quote_text": "AIやデータサイエンスに関する教育を早期から必修化"
+          "quote_text": "AIやデータサイエンスに関する教育を早期から必修化",
+          "policy_id": "policy_017"
         }
       ],
       "not-manifesto": [
