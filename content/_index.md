@@ -7,17 +7,10 @@ title: "2026 衆議院選挙"
 
 
 <!-- 何人の方に見ていただいたのか知りたい -->
-<meta name="google-site-verification" content="R8TsqlgfjN1Gk8IQMNQn85xnDKqc2p8LuTK9ruVw4xs" />
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "232c493c56424060a15bf34be0407672"}'></script>
+<!-- End Cloudflare Web Analytics -->
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FC2DGVYLF5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FC2DGVYLF5');
-</script>
 
 <?xml version="1.0" encoding="utf-8"?>
 <svg class="geolonia-svg-map" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

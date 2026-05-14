@@ -1,0 +1,261 @@
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+
+
+
+
+
+{{- $theme := site.Params.defaultTheme | default "auto" }}
+{{- if eq $theme "dark" }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="dark">
+{{- else if eq $theme "light" }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="light">
+{{- else }}
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}" data-theme="auto">
+{{- end }}
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
+<body class="list" id="top">
+{{- else }}
+<body id="top">
+{{- end }}
+    {{ partialCached "header.html" . .Page -}}
+  
+</body>
+
+
+
+
+
+
+<style>
+  .pledge-container {
+  
+   font-family: "Inter";
+    color: #334155;
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  /* タイトル周り .candidate-header {
+    border-bottom: 4px solid #2563eb;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  } */
+ 
+  .candidate-name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+  }
+  .candidate-party {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 5px;
+  }
+/*  .last-updated {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #94a3b8;
+  }*/
+
+
+.pledge-card .last-updated {
+  text-align: left; /* 左寄せにする */
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #e2e8f0; /* 区切り線を入れると見やすくなります */
+}
+
+
+  /* セクション見出し */
+  h2 {
+    font-size: 1.5rem;
+    background: #f1f5f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border-left: 6px solid #2563eb;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* 公約*/
+  .pledge-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0px;
+    padding: 20px;
+    margin-bottom: 20px;
+   /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.2s; */
+
+  }
+  /*.pledge-card:hover { transform: translateY(-2px); } */
+
+  .status-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .status-checked { background-color: #22c55e; color: white; }
+  .status-doing   { background-color: #f59e0b; color: white; }
+  .status-todo    { background-color: #94a3b8; color: white; }
+
+  .pledge-title { font-size: 1.25rem; font-weight: bold; color: #1e293b; margin-bottom: 10px; display: block; }
+  .quote-box {
+    background: #f8fafc;
+    border-left: 3px solid #cbd5e1;
+    padding: 12px 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #475569;
+  }
+  .reason-text { font-size: 0.95rem; color: #334155; }
+  .reason-label { font-weight: bold; color: #030303; font-size: 0.85rem; margin-right: 5px; }
+
+  /* 公報全文 */
+  .bulletin-fulltext {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+  }
+  .bulletin-block { margin-bottom: 25px; }
+  .bulletin-h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #1e293b;
+  }
+
+  .btn-pdf {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 80px;
+    background-color: #bee1ff;
+    color: rgba(16, 1, 1, 0.667);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="pledge-container">
+
+
+  {{ $district_code := .Params.district_code }}
+
+  {{ $dot_path := replace $district_code "-" "." }}
+  
+
+
+{{ $parts := split $district_code "-" }}
+
+
+  {{ $year := index $parts 0 }}     
+  {{ $type := index $parts 1 }}    
+  {{ $pref := index $parts 2 }}   
+  {{ $num_raw := index $parts 3 }} 
+  
+  
+  {{ $num := printf "%02s" $num_raw }}
+
+{{ $pdf_path := printf "/pdf/%s/%s/%s/%s-%s.pdf" $year $type $pref $pref $num }}
+
+
+
+
+  {{ $districtData := index site.Data (split $dot_path ".") }}
+
+  {{ if $districtData }}
+ 
+  
+    {{ $candidate := index $districtData.candidates 0 }}
+    
+
+    
+
+
+    <header class="candidate-header">
+      <div class="candidate-party">{{ $candidate.party }}</div>
+      <h1 class="candidate-name">{{ $candidate.name }} の公約検証</h1>
+    </header>
+
+    <section>
+      <h2><i class="fas fa-file-contract"></i> 選挙公報からの公約抽出</h2>
+      {{ range $candidate.bulletin.manifesto }}
+    
+      
+        {{ $master := index $.Site.Data.policies .policy_id }}
+        <div class="pledge-card">
+          <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
+            {{ $master.status | default "未確認" }}
+          </span>
+          <span class="pledge-title">{{ .title }}</span>
+          <div class="quote-box">「{{ .quote_text }}」</div>
+           <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
+            <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
+       
+        </div>
+      {{ else }}
+        <p>公報から抽出された具体的な公約は現在ありません。</p>
+      {{ end }}
+    </section>
+
+    <section>
+      <h2><i class="fas fa-globe"></i> ウェブサイト等での公約</h2>
+      {{ range $candidate.web.manifesto }}
+        {{ $master := index $.Site.Data.policies .policy_id }}
+        <div class="pledge-card">
+          <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
+            {{ $master.status | default "未確認" }}
+          </span>
+          <span class="pledge-title">{{ .title }}</span>
+          <div class="quote-box">「{{ .quote_text }}」</div>
+          <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
+    
+
+          <div><a href="{{ .sources}}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></div>
+          <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
+
+ 
+       
+       
+        </div>
+      {{ end }}
+    </section>
+
+    <section>
+      <h2><i class="fas fa-align-left"></i> 選挙公報 全文</h2>
+      <div class="bulletin-fulltext">
+        {{ range $candidate.bulletin.full_text_blocks }}
+          <div class="bulletin-block">
+            <div class="bulletin-h4">{{ .header }}</div>
+            <div class="bulletin-body">{{ .body | safeHTML }}</div>
+          </div>
+        {{ end }}
+      </div>
+      <a href="{{ $pdf_path }}" class="btn-pdf" target="_blank">
+        原本PDFを表示
+      </a>
+    </section>
+
+  {{ else }}
+    <p>データが見つかりません。パスを確認してください: data/{{ replace $dot_path "." "/" }}.json</p>
+  {{ end }}
+</div>
