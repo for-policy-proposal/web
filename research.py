@@ -400,14 +400,24 @@ def save_append_data(out_file, district, num, winner, new_manifesto, new_not_man
 
 ALL_WINNERS = {
     "tokyo": {
-        4: {
-            "name": "平将明",
-            "official": "https://www.taira-m.jp/",
+        6: {
+            "name": "畦元将吾",
+            "official": "https://azemoto.jp/",
             "party": "自由民主党"
         },
-        5: {
-            "name": "若宮健嗣",
-            "official": "https://k-wakamiya.com/",
+        7: {
+            "name": "丸川珠代",
+            "official": "https://t-marukawa.jp/",
+            "party": "自由民主党"
+        },
+        8: {
+            "name": "門寛子",
+            "official": "https://kado-hiroko.jp/",
+            "party": "自由民主党"
+        },
+        9: {
+            "name": "菅原一秀",
+            "official": "https://isshu.online/",
             "party": "自由民主党"
         },
     }
@@ -1284,10 +1294,10 @@ JSONとして正しい形で返してください。
 
 
 def process(district,winner,num,official,party):
-    #with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-     # future1 = executor.submit(research1, district, winner, num, official)
-    #   future2 = executor.submit(research2, district, winner, num)
-    #   concurrent.futures.wait([future1, future2])
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+        future1 = executor.submit(research1, district, winner, num, official)
+        future2 = executor.submit(research2, district, winner, num)
+        concurrent.futures.wait([future1, future2])
 
     get_manifesto(district, winner, num,party)
     overlapping(district, num)

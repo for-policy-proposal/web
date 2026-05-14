@@ -4,8 +4,442 @@
     {
       "name": "平将明",
       "party": "自由民主党",
-      "manifesto": [],
-      "not-manifesto": []
+      "manifesto": [
+        {
+          "title": "消費税の廃止",
+          "reason": "「廃止」という制度のステータス変更を断定的にコミットしており、法改正や税率変更で客観的に判定できるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "消費税の廃止を行う"
+        },
+        {
+          "title": "消費税を5％へ減税",
+          "reason": "「5%に減税」という具体的な数値の変更を明示しており、実施の有無が客観的に判定できるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "消費税を緊急に5％へ減税し"
+        },
+        {
+          "title": "インボイス制度の廃止",
+          "reason": "「廃止」という具体的な制度のステータス変更を指しており、法改正の有無によって検証が可能であるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "インボイス制度を廃止し"
+        },
+        {
+          "title": "最低賃金の引き上げ（時給1700円）",
+          "reason": "「1700円（当面1500円）」という具体的な数値目標を示した断定的なアクションであり、実施の有無が検証可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "最低賃金を時給1700円（当面1500円）へ引き上げ"
+        },
+        {
+          "title": "学費の半額化",
+          "reason": "「半額」という明確な数値・ステータス変更を示しており、検証が可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "学費の半額化"
+        },
+        {
+          "title": "入学金の廃止",
+          "reason": "入学金という特定制度の「廃止」というステータス変更を指しており、客観的に検証可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "入学金の廃止"
+        },
+        {
+          "title": "返済中の奨学金の半額免除",
+          "reason": "「半額免除」という具体的な数値・ステータス変更が明示されており、実行されたかどうかが客観的に判断可能であるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "返済中の奨学金の半額免除を行う"
+        },
+        {
+          "title": "修学旅行・制服・学用品の無償化",
+          "reason": "「無償化（0円）」という明確な費用のパラメータ変更を明示しており、実施の検証が可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "修学旅行・制服・学用品の無償化"
+        },
+        {
+          "title": "公共交通の子ども料金の適用年齢拡大（18歳まで）",
+          "reason": "「18歳まで」という明確な変数の変更を含んでおり、実施されたかどうか客観的に判定できるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "公共交通の子ども料金の18歳までの拡大"
+        },
+        {
+          "title": "所得税の減税",
+          "reason": "法改正の有無によって実行されたかが客観的に判断可能であるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "所得税減税"
+        },
+        {
+          "title": "ガソリン補助金の継続",
+          "reason": "ガソリン補助金は廃止が予見される時限措置であるため、その継続（延長）という予算上のステータス変更を実施の有無で明確に判定できるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "ガソリン補助金の継続"
+        },
+        {
+          "title": "低所得世帯への現金給付",
+          "reason": "「現金給付の実施」は予算措置の有無によって実行されたかを数字と制度で客観的に100%判断可能であるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "低所得世帯への現金給付"
+        },
+        {
+          "title": "子育て世帯への給付",
+          "reason": "「給付の実施」は予算措置や事務連絡の有無によって実行されたかを客観的に判断可能であるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "子育て世帯への給付を実施"
+        },
+        {
+          "title": "暗号資産に関連する税制改正",
+          "reason": "「税制改正」という法令の変更を伴う具体的な政治アクションを明示しており、法案成立など客観的な条文の有無で達成度が検証可能であるため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "暗号資産に関連する税制改正"
+        }
+      ],
+      "not-manifesto": [
+        {
+          "title": "経済成長と財政の両立",
+          "reason": "「両立」は抽象的なスローガンであり、具体的な変数やアクションを伴っていないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "人口減少下での経済成長と財政の両立。"
+        },
+        {
+          "title": "社会保障費や住民税等の壁の見直し",
+          "reason": "「見直し」は具体的な結果を約束しない意欲表現であり、客観的検証が不可能であるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "社会保障費や住民税等の壁の見直しなど"
+        },
+        {
+          "title": "経済対策への取り組み",
+          "reason": "「取り組む」は意欲表現であり、抽象的な概念の実施を示しているにすぎないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "「手取りを増やす」政策に取り組む。均衡ある豊かな社会の実現に向けた経済対策。"
+        },
+        {
+          "title": "可能な限りの減税",
+          "reason": "「可能な限り」は変数が不明確であり、達成されたかどうかの客観的判断が不可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "可能な限りの減税"
+        },
+        {
+          "title": "成長を伴う財政再建の実現",
+          "reason": "「目指す」は単なる手続き・意欲表現であり、具体的なアクションの断定ではないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "成長を伴う財政再建を目指す"
+        },
+        {
+          "title": "消費税の廃止を目指す",
+          "reason": "「目指す」は意欲表現であり、結果に対する断定的なコミットメントではないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "将来的には廃止を目指す"
+        },
+        {
+          "title": "中小企業の直接支援",
+          "reason": "「支援する」は抽象的で、具体的にどのような変数を操作するのかが不明であり客観的判断ができないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "大企業の内部留保への課税を財源として中小企業を直接支援する。"
+        },
+        {
+          "title": "ケア労働者の賃上げ",
+          "reason": "いくら上げるのか、どの制度を変えるのかという具体的な変数が示されておらず判定不能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "ケア労働者の賃上げを行う"
+        },
+        {
+          "title": "防衛体制の強化",
+          "reason": "「強化」は抽象的な方向性を示すのみで、実施の有無をYes/Noで判断できないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "同盟国・同志国との連携を深め、サイバー分野における日本の防衛体制を強化する。"
+        },
+        {
+          "title": "地方国立大学の再活性化",
+          "reason": "「再活性化」は抽象的なスローガンであり、何をもって達成とするかが不明確であるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "地方国立大学を地方創生の拠点として再活性化させる。"
+        },
+        {
+          "title": "主権者教育などの拡充",
+          "reason": "「拡充を図る」は客観的に判断できない表現であり、具体的な制度変更を伴わないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "世界に通用する教養人の育成、学問の自由の尊重、主権者教育の拡充を図る"
+        },
+        {
+          "title": "教育の無償化の推進",
+          "reason": "「推進」は意欲表現であり、断定的なコミットメントを伴わないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "教育の無償化を推進し"
+        },
+        {
+          "title": "給付型奨学金の拡大",
+          "reason": "「拡大」は具体的に何人、いくらなどの変数がなく、達成度が客観的に測定できないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "給付型奨学金の拡大"
+        },
+        {
+          "title": "少人数学級の推進、校則の改善等",
+          "reason": "「推進」「改善」「取り組む」は意欲・手続きの表現であり判断基準の排除基準に該当するため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "少人数学級の推進、理不尽な校則の改善、就活セクハラ根絶に取り組む。"
+        },
+        {
+          "title": "日本人中心の体制の維持",
+          "reason": "「体制を維持する」は現状維持であり、政治的な新規公約としての制度改変を伴わないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "日本人中心の体制を維持する。"
+        },
+        {
+          "title": "持続可能な共生を前提とした政策の実施",
+          "reason": "「政策」という抽象的な対象の「実施」であり、具体的な変数が存在しないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
+          "quote_text": "持続可能な共生を前提とした政策を実施する。"
+        },
+        {
+          "title": "デジタル化の推進",
+          "reason": "「推進」という言葉が含まれる手続き・意欲表現であり、具体的なステータス変更がないため。",
+          "sources": "https://www.taira-m.jp/2026/01/-2026.html",
+          "quote_text": "デジタル大臣、サイバー安全保障担当大臣等の実績を活かしたデジタル化の推進"
+        },
+        {
+          "title": "物価高対策の実施",
+          "reason": "「実施」という言葉はあるが、その対象となる「物価高対策」という概念が抽象的であり、具体的にどの変数を操作するのか不明瞭なため。",
+          "sources": "https://www.taira-m.jp/2026/01/-2026.html",
+          "quote_text": "暮らしを守るための物価高対策の実施"
+        },
+        {
+          "title": "大田区のまちづくり",
+          "reason": "「元気で住みやすい」という抽象的なスローガンに過ぎず、客観的に評価可能な変数を含まないため。",
+          "sources": "https://www.taira-m.jp/2026/01/-2026.html",
+          "quote_text": "元気で住みやすい大田区のまちづくり"
+        },
+        {
+          "title": "社会課題の解決",
+          "reason": "技術を活用して「解決」するという抽象的な方針であり、特定の法整備や制度の創設などの具体的・観測可能な行動がないため。",
+          "sources": "https://www.taira-m.jp/2026/01/-2026.html",
+          "quote_text": "AI等最先端技術を活用した社会課題の解決"
+        },
+        {
+          "title": "安全保障政策の強化",
+          "reason": "「強化」という言葉が含まれており、達成されたかどうかが客観的に判定できないため直ちに却下。",
+          "sources": "https://www.taira-m.jp/2026/01/-2026.html",
+          "quote_text": "国家と国民を守るための安全保障政策の強化"
+        },
+        {
+          "title": "政治改革および行政改革の推進",
+          "reason": "「推進」という手続き・意欲表現が含まれており、結果への断定的なコミットメントではないため。",
+          "sources": "https://www.taira-m.jp/2026/01/-2026.html",
+          "quote_text": "政治改革および行政改革の推進"
+        },
+        {
+          "title": "電気・ガス料金の負担軽減",
+          "reason": "「軽減」はどれだけの数値をどう変更するのか（補助金なのか別制度なのか）が不明で、客観的な判定が不可能なため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "電気・ガス料金の負担軽減"
+        },
+        {
+          "title": "国と都の連携による支援の継続",
+          "reason": "「フルパッケージの支援」という抽象的な内容の継続を述べており、現状維持かつ抽象的スローガンに過ぎないため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "国と都の連携による「フルパッケージ」の支援を継続する。"
+        },
+        {
+          "title": "経済成長モデルの構築",
+          "reason": "排除対象の動詞「促進」が含まれており、また「構築する」対象が「経済成長モデル」という検証不能な抽象的概念であるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "投資とイノベーションを促進しGDPを拡大させる経済成長モデルを構築する。"
+        },
+        {
+          "title": "リスク教育の徹底",
+          "reason": "排除対象の動詞「徹底」が含まれており、実施や達成を客観的に観測不可能な意気込み表現であるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "AIが間違えることや感情移入のリスクを教えるリスク教育を徹底"
+        },
+        {
+          "title": "才能を伸ばす教育の推進",
+          "reason": "排除対象の動詞「推進」が含まれているため、内容に関係なく即座に却下。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "子供一人ひとりの興味や尖った才能を伸ばす教育を推進する。"
+        },
+        {
+          "title": "情報社会の安全と民主主義を守る体制の整備",
+          "reason": "「体制」という抽象概念を対象としており、「必要であれば」といった条件付きの曖昧な意気込みに留まっているため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "必要であれば法改正を含めた組織的な対応を行うことで、情報社会の安全と民主主義を守る体制を整備する。"
+        },
+        {
+          "title": "サイバーセキュリティ対策の中小企業への拡大",
+          "reason": "「拡大」の具体的な基準や変更する変数が不明であり、実施されたか否かを100%客観的に判定できず恣意的になりうるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "サイバーセキュリティ対策を中小企業へ拡大し"
+        },
+        {
+          "title": "技術的な支援メニューの大幅な拡充",
+          "reason": "「大幅に拡充する」という表現は明確な数値基準が存在せず、実施の有無を客観的・断定的に判断できない曖昧なコミットメントであるため。",
+          "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
+          "quote_text": "技術的な支援メニューを大幅に拡充する。"
+        },
+        {
+          "title": "AIなど新技術の積極的活用",
+          "reason": "「活用」は具体的にどのように制度を変更するのか不明であり、客観的な検証が不可能なため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "AIなど新技術の積極的活用"
+        },
+        {
+          "title": "マイナンバーカードの健康保険証利用の推進",
+          "reason": "排除基準である「推進」という表現が含まれており、客観的な公約とはみなせないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "マイナンバーカードの健康保険証利用の推進"
+        },
+        {
+          "title": "地方自治体のデジタル化支援を通じた行政サービスの効率化と持続可能性の向上",
+          "reason": "「支援」や「向上」は抽象的な目標であり、第三者が判断できる具体的な変数の変更がないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "地方自治体のデジタル化支援を通じた行政サービスの効率化と持続可能性の向上"
+        },
+        {
+          "title": "霞が関の働き方改革の推進",
+          "reason": "排除基準である「推進」という表現が含まれているため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "霞が関の働き方改革の推進"
+        },
+        {
+          "title": "人材確保のための制度改革",
+          "reason": "「制度改革」とあるが、具体的にどの制度のどの部分（変数）を改めるのかが不明瞭であり客観的検証ができないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "人材確保のための制度改革"
+        },
+        {
+          "title": "行政サービスのデジタル化による効率化を通じた、政府機関の生産性向上と魅力的な職場環境の創出",
+          "reason": "「向上」や「創出」といった抽象的なスローガンであり、操作可能な変数の明示がないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "行政サービスのデジタル化による効率化を通じた、政府機関の生産性向上と魅力的な職場環境の創出"
+        },
+        {
+          "title": "NFTを活用した日本の文化・コンテンツの価値最大化",
+          "reason": "「価値最大化」は主観的な目標であり、数字や制度変更の有無で100%判定することができないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "NFTを活用した日本の文化・コンテンツの価値最大化"
+        },
+        {
+          "title": "ゲーム産業でのブロックチェーン技術活用支援",
+          "reason": "「支援」という曖昧な表現であり、具体的なステータス変更ではないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "ゲーム産業でのブロックチェーン技術活用支援"
+        },
+        {
+          "title": "メタバース空間での新たな経済圏創出",
+          "reason": "「創出」は概念的な理想であり、どのような法律や制度の変更を伴うかが示されていないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "メタバース空間での新たな経済圏創出"
+        },
+        {
+          "title": "「地方創生2.0」の推進",
+          "reason": "排除基準である「推進」が含まれているため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "ブロックチェーン技術やDAO、NFTなどを活用し、地方が持つアナログの価値を最大化する「地方創生2.0」の推進"
+        },
+        {
+          "title": "プログラミングやデジタルリテラシー教育の強化",
+          "reason": "排除基準である「強化」が含まれるため即時却下。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "初等・中等教育段階からのプログラミングやデジタルリテラシー教育の強化"
+        },
+        {
+          "title": "中高年層を対象としたリスキリング（再教育）プログラムの整備によるデジタルスキル人材の育成",
+          "reason": "「整備」や「育成」は内容が抽象的であり、客観的に評価可能な変数やコミットメントがないため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "中高年層を対象としたリスキリング（再教育）プログラムの整備によるデジタルスキル人材の育成"
+        },
+        {
+          "title": "スタートアップエコシステムの構築支援とグローバル連携の強化による国際競争力の向上",
+          "reason": "「支援」「強化」「向上」といった排除基準の動詞が多用されており、具体的な制度変更にならない努力目標であるため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "スタートアップエコシステムの構築支援（資金調達や人材確保）、およびグローバル連携の強化によるデジタル分野での国際競争力の向上"
+        },
+        {
+          "title": "国会のデジタル改革",
+          "reason": "名称のみで具体的に何をどう変更・立法するのか（変数の特定）ができず、検証が不能であるため。",
+          "sources": "https://expact.jp/taira-masaaki/",
+          "quote_text": "国会のデジタル改革"
+        },
+        {
+          "title": "AISIにおける技術的評価・安全性評価の体制構築",
+          "reason": "「構築」の対象が「体制」という抽象的な概念であり、達成を客観的・数値的に検証不能であるため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-368.html",
+          "quote_text": "発表・提供に先立つ技術的評価や安全性評価を適切に実施できる体制を構築する。"
+        },
+        {
+          "title": "AISIの人員・体制の拡充",
+          "reason": "「拡充」は水準が不明瞭であり、達成の有無を明確にYes/Noで判定できないため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-368.html",
+          "quote_text": "AISIの人員・体制の拡充"
+        },
+        {
+          "title": "専門人材の確保",
+          "reason": "「確保」は具体的な制度変更や数値目標ではなく、基準が曖昧であり客観的判断ができないため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-368.html",
+          "quote_text": "専門人材の確保"
+        },
+        {
+          "title": "安定的な財政基盤の整備",
+          "reason": "「財政基盤」という抽象的な概念に対する「整備」であり、具体的にどの変数を変更するのかが不明確なため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-368.html",
+          "quote_text": "安定的な財政基盤の整備"
+        },
+        {
+          "title": "関係機関との連携強化の推進",
+          "reason": "「強化」および「推進」が含まれており、単なる意欲・手続き表現に過ぎないため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-368.html",
+          "quote_text": "国内外の関係機関との連携強化を推進し"
+        },
+        {
+          "title": "AIのイノベーション促進とリスク管理の両立",
+          "reason": "「促進」を含む抽象的なスローガンであり、具体的な行動を伴う断定的なコミットメントとはみなせないため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-368.html",
+          "quote_text": "AIのイノベーション促進とリスク管理の両立を図る"
+        },
+        {
+          "title": "給付インフラの構築を推進",
+          "reason": "「推進する」という表現は明確な政治的アクションではなく、単なる意欲・手続き表現の排除基準に直ちに該当するため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-369.html",
+          "quote_text": "「公正」「公平」「迅速」な給付を実現するための給付インフラの構築を推進する。"
+        },
+        {
+          "title": "制度設計とシステム整備の検討体制構築",
+          "reason": "「検討」という手続き表現が含まれている上、「体制を構築」という対象が極めて抽象的であり、達成水準が客観的に検証不能なため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-369.html",
+          "quote_text": "給付付き税額控除の検討に当たり、制度設計とシステム整備を一体で進めるための検討体制を構築する。"
+        },
+        {
+          "title": "給付インフラの安定的運用・高度化のための経費確保",
+          "reason": "「必要な経費」という表現には具体的な数値等の変数が欠落しており、第三者が客観的かつ100%明確に達成の有無を判定できないため。",
+          "sources": "https://www.taira-m.jp/2025/12/post-369.html",
+          "quote_text": "平時から必要な備えを行うデジタルガバメントの実現に向け、給付インフラを安定的に運用・高度化するための必要な経費を確保する。"
+        },
+        {
+          "title": "国家サイバーセキュリティ戦略の推進",
+          "reason": "「推進」という手続きや意欲を表す表現が含まれており、結果への断定的なコミットメントではないため。",
+          "sources": "https://www.taira-m.jp/vision.html",
+          "quote_text": "国家サイバーセキュリティ戦略を推進する。"
+        },
+        {
+          "title": "効率的な給付システムの構築",
+          "reason": "「構築」の対象が「効率的な給付システム」であり、システムが「効率的」かどうかは第三者が100%客観的な数字や条文で判断できず不明瞭なため。",
+          "sources": "https://www.taira-m.jp/vision.html",
+          "quote_text": "デジタル技術を活用した効率的な給付システムを構築する。"
+        },
+        {
+          "title": "AIセーフティ・インスティテュートの機能強化と環境整備",
+          "reason": "排除基準である「強化」が含まれていること、さらに「環境整備」という抽象的な概念を対象にしているため。",
+          "sources": "https://www.taira-m.jp/vision.html",
+          "quote_text": "AIセーフティ・インスティテュート（AISI）の機能を強化し、社会実装に向けた環境整備を進める。"
+        },
+        {
+          "title": "サイバー対処能力強化のための法案策定と推進",
+          "reason": "法案の策定について言及があるものの、内容に関わらず却下対象となる「強化」および「推進」が含まれているため。",
+          "sources": "https://www.taira-m.jp/vision.html",
+          "quote_text": "サイバー対処能力を強化するための法案および関連整備法案を策定・推進し"
+        },
+        {
+          "title": "AI利活用のためのガイダンス整備と環境構築",
+          "reason": "却下対象の「促進」が含まれていること、および「構築」の対象が「適切な利用環境」という抽象的な概念であるため。",
+          "sources": "https://www.taira-m.jp/vision.html",
+          "quote_text": "AIの利活用を促進しつつ、著作権者との権利保護の両立を図るためのチェックリストおよびガイダンスを整備し、適切な利用環境を構築する。"
+        }
+      ]
     }
   ]
 }
