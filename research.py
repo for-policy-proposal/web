@@ -312,9 +312,9 @@ def overlapping (district, num):
 
 
 
-@retry(stop=stop_after_attempt(3), wait=wait_fixed(2))
+@retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=3, max=50))
 def safe_request_get(url):
-    res = requests.get(url, timeout=(5, 10))
+    res = requests.get(url, headers={'User-Agent': ''}, timeout=(12, 15))
     res.raise_for_status() 
     return res
 
@@ -400,9 +400,94 @@ def save_append_data(out_file, district, num, winner, new_manifesto, new_not_man
 
 ALL_WINNERS = {
     "tokyo": {
+        10: {
+            "name": "鈴木隼人",
+            "official": "https://www.suzukihayato.jp/",
+            "party": "自由民主党"
+        },
+        11: {
+            "name": "下村博文",
+            "official": "https://www.hakubun.biz/",
+            "party": "自由民主党"
+        },
+        12: {
+            "name": "高木啓",
+            "official": "https://takagi-kei.com/",
+            "party": "自由民主党"
+        },
+        13: {
+            "name": "土田慎",
+            "official": "http://www.tsuchida-shin.jp/",
+            "party": "自由民主党"
+        },
+        14: {
+            "name": "松島みどり",
+            "official": "https://www.matsushima-midori.jp/",
+            "party": "自由民主党"
+        },
+        15: {
+            "name": "大空幸星",
+            "official": "https://ozorakoki.com/",
+            "party": "自由民主党"
+        },
         16: {
             "name": "大西洋平",
             "official": "https://youhei.me/",
+            "party": "自由民主党"
+        },
+        17: {
+            "name": "平沢勝栄",
+            "official": "https://hirasawa.net/",
+            "party": "自由民主党"
+        },
+        18: {
+            "name": "福田かおる",
+            "official": "https://fukuda-kaoru.com/",
+            "party": "自由民主党"
+        },
+        19: {
+            "name": "松本洋平",
+            "official": "https://matsumoto-yohei.com/",
+            "party": "自由民主党"
+        },
+        20: {
+            "name": "木原誠二",
+            "official": "https://kiharaseiji.com/",
+            "party": "自由民主党"
+        },
+        21: {
+            "name": "小田原潔",
+            "official": "https://odawarakiyoshi.jp/",
+            "party": "自由民主党"
+        },
+        22: {
+            "name": "伊藤達也",
+            "official": "https://www.tatsuyaito.com/",
+            "party": "自由民主党"
+        },
+        23: {
+            "name": "川松真一朗",
+            "official": "https://kawamatsu2011.com/",
+            "party": "自由民主党"
+        },
+        24: {
+            "name": "萩生田光一",
+            "official": "https://www.ko-1.jp/",
+            "party": "自由民主党"
+        },
+        25: {
+            "name": "井上信治",
+            "official": "https://www.inoue-s.jp/",
+            "party": "自由民主党"
+        },
+        26: {
+            "name": "今岡植",
+            "official": "https://imaoka-ueki.com/",
+            "party": "自由民主党"
+        },
+        27: {
+            "name": "黒崎祐一",
+            "official": "https://kuro1.jp/",
             "party": "自由民主党"
         },
         28: {
@@ -410,6 +495,16 @@ ALL_WINNERS = {
             "official": "https://andotakao.jp/",
             "party": "自由民主党"
         },
+        29: {
+            "name": "長澤興祐",
+            "official": "http://www.kosukenagasawa.com/",
+            "party": "自由民主党"
+        },
+        30: {
+            "name": "長島昭久",
+            "official": "https://nagashima30.com/",
+            "party": "自由民主党"
+        }
     }
 }
 
@@ -668,9 +763,7 @@ JSONとして正しい形で返してください。
     interaction_id = interaction.id
     final_result = wait_for_research(client,interaction_id)
 
-    OUT_DIR = Path("output/draftresearch/")
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    out_file = OUT_DIR / f"{district}-{num:02d}-api.json"
+
             
 
     try:
@@ -1284,21 +1377,21 @@ JSONとして正しい形で返してください。
 
 
 def process(district,winner,num,official,party):
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
-        future1 = executor.submit(research1, district, winner, num, official)
-        future2 = executor.submit(research2, district, winner, num)
-        concurrent.futures.wait([future1, future2])
-        print(f"{district, num} research finished")
+    #with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+     #   future1 = executor.submit(research1, district, winner, num, official)
+      #  future2 = executor.submit(research2, district, winner, num)
+       # concurrent.futures.wait([future1, future2])
+        #print(f"{district, num} research finished")
 
-    #get_manifesto(district, winner, num,party)
-    #overlapping(district, num)
-    #overlapping(district, num)
+    get_manifesto(district, winner, num,party)
+    overlapping(district, num)
+    overlapping(district, num)
 
 
 
 
 if __name__ == "__main__":
-    with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         futures=[]
         for district, winners in ALL_WINNERS.items():
             for num, info in winners.items():
