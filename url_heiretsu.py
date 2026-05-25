@@ -1,3 +1,6 @@
+#quoteはもう少し長めに
+
+
 import os
 import json
 import time
@@ -339,7 +342,8 @@ def safe_generate_content(client, model, contents, config):
             model="~google/gemini-pro-latest",
             messages=[{"role": "user", "content": full_text}],
             response_format=config ,
-            server_url=url )
+            server_url=url ,
+            max_tokens=20000 )
         
         content = response.choices[0].message.content
         print(content)
@@ -426,31 +430,42 @@ def save_append_data(out_file, district, num, winner, new_manifesto, new_not_man
 
 ALL_WINNERS = {
     "tokyo": {
-        15: {
-            "name": "大空幸星",
-            "official": "https://ozorakoki.com/",
+        6: {
+            "name": "畦元将吾",
+            "official": "https://azemoto.jp/",
             "party": "自由民主党"
         },
-        16: {
-            "name": "大西洋平",
-            "official": "https://youhei.me/",
+        20: {
+            "name": "木原誠二",
+            "official": "https://kiharaseiji.com/",
             "party": "自由民主党"
         },
-        17: {
-            "name": "平沢勝栄",
-            "official": "https://hirasawa.net/",
+        21: {
+            "name": "小田原潔",
+            "official": "https://odawarakiyoshi.jp/",
             "party": "自由民主党"
         },
-        18: {
-            "name": "福田かおる",
-            "official": "https://fukuda-kaoru.com/",
+        22: {
+            "name": "伊藤達也",
+            "official": "https://www.tatsuyaito.com/",
             "party": "自由民主党"
         },
-        19: {
-            "name": "松本洋平",
-            "official": "https://matsumoto-yohei.com/",
+        23: {
+            "name": "川松真一朗",
+            "official": "https://kawamatsu2011.com/",
             "party": "自由民主党"
         },
+        24: {
+            "name": "萩生田光一",
+            "official": "https://www.ko-1.jp/",
+            "party": "自由民主党"
+        },
+        25: {
+            "name": "井上信治",
+            "official": "https://www.inoue-s.jp/",
+            "party": "自由民主党"
+        }
+        
     }
 }
 
@@ -880,7 +895,9 @@ def get_manifesto(district,winner,num,party):
             }
         ]
     }
-   
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(final_data, f, ensure_ascii=False, indent=2)
+        print(f"初期ファイルを作成しました: {out_file}")
 
 
     input_file = f"output/draftresearch/{district}-{num:02d}-final.json"
@@ -947,9 +964,18 @@ def get_manifesto(district,winner,num,party):
             print("  -> HTML以外なのでスキップ:", res.headers.get("Content-Type"))
             return
         print("PAGE 取れた")
+
         soup = BeautifulSoup(res.content, 'html.parser')
         for script in soup(["script", "style"]):
             script.decompose()
+
+        page_lang = soup.find('html').get('lang')
+        if page_lang:
+            page_lang_lower = page_lang.lower()
+            print(page_lang_lower)
+            if "cn" in page_lang_lower or "zn" in page_lang_lower:
+                print("中国語のページです")
+                return
         
         clean_text = soup.get_text(separator=' ', strip=True)
 
@@ -959,8 +985,8 @@ def get_manifesto(district,winner,num,party):
 
         
         print("AI")
-        prompt= f"""初めにページが{winner}についてのページか考えてください。ページが{winner}についてではなければFalseと返しここで考えを止めてください。{winner}についてであれば、入力されたページの全文を読み込み、公約について少しでも書いているページか判断してください。
-    公約を書いていればTrue,書いていなければFalseと返答してください。なお、政策は存在するが、ページではなくメニューページや過去の実績について書いてある場合もFalseとしてください。
+        prompt= f"""初めにページが{winner}についてのページか考えてください。ページが{winner}についてではなければFalseと返しここで考えを止めてください。{winner}についてであれば、入力されたページの全文を読み込み、日本語で公約について少しでも書いているページか判断してください。
+    公約を書いていればTrue,書いていなければFalseと返答してください。なお、日本語でない場合や、政策は存在するが、ページではなくメニューページや過去の実績について書いてある場合もFalseとしてください。
     過去の実績について書いてある場合もFalseとすることに留意してください。
     
     応答は必ず以下のJSON形式のみとし、一切の解説や挨拶、Markdown装飾（```json 等）を禁止します。
@@ -1054,7 +1080,7 @@ def get_manifesto(district,winner,num,party):
             print("format function has error, response is not True or False")
             print(response.text)
  
-    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         futures = [executor.submit(each_url_process, url) for url in urls]
         concurrent.futures.wait(futures)
         print(f"finished {district} {num} district")
@@ -1195,90 +1221,75 @@ JSONとして正しい形で返してください。
 {{
     "title": "価格転嫁ガイドラインの法的拘束力強化",
     "reason": "「法的拘束力の付与」という制度的変更（ステータスの変更）を指しており、法改正という具体的なアクションを伴うため。",
-    "sources":  "{{url}}",
-    "quote_text": "価格転嫁ガイドラインの法的拘束力強化"
+    "quote_text": "価格転嫁ガイドラインの法的拘束力強化を行うことにより、中小企業の価格転嫁を促します。"
 }},
 {{
     "title": "税・社会保険料未納情報の共有および在留審査への活用",
     "reason": "行政機関間での「データ共有」と「審査への反映」という、システムの運用ルール変更を具体的に指しているため。",
-    "sources": "{{url}}",
     "quote_text": "税や社会保険料の未納情報を行政機関間で共有し、その情報を在留審査に活用する"
 }},
 {{
     "title": "国土全域での土地実質的支配者情報の把握と公開",
     "reason": "情報の「公開」および「把握」という、透明性向上のための制度設計を指しており、公報等で実施が確認可能であるため。",
-    "sources": "{{url}}",
-    "quote_text": "国土全域で土地等の実質的支配者情報等を把握し国民に公開"
+    "quote_text": "安全保障のため、国土全域で土地等の実質的支配者情報等を把握し国民に公開する制度を導入します"
 }},
 {{
     "title": "AI・データサイエンス教育の早期必修化",
     "reason": "公教育における「必修化」という、学習指導要領の変更という具体的かつ観測可能な制度変更を指しているため。",
-    "sources": "{{url}}",
-    "quote_text": "AIやデータサイエンスに関する教育を早期から必修化"
+    "quote_text": "デジタル化が進む現代の世界に対応するため、AIやデータサイエンスに関する教育を早期から必修化します。"
 }},
 {{
     "title": "対日外国投資委員会（日本版CFIUS）の創設",
     "reason": "特定の新規制度の設立を明言しており、その存否が客観的に確認可能なため。",
-    "sources": "https://go2senkyo.com/seijika/142007",
-    "quote_text": "対日外国投資委員会（日本版CFIUS）を創設"
+    "quote_text": "経済安全保障の観点から、対日外国投資委員会（日本版CFIUS）を創設します。"
 }},
 {{
     "title": "住宅ローン減税の床面積要件を緩和",
     "reason": "「床面積要件」という税制上の具体的なパラメータの変更を明示しており、法改正が実施されたかによって検証が可能であるため。",
-    "sources": "{{url}}",
-    "quote_text": "住宅ローン減税の床面積要件を緩和"
+    "quote_text": "高い不動産価格の実態を踏まえて住宅ローン減税の床面積要件を緩和します。"
 }},
 {{
     "title": "日本版DBS（性犯罪歴確認仕組み）の導入",
     "reason": "「日本版DBS」という特定の新規制度の設立を指しており、その存否によって実施の有無を明確に判定できるため。",
-    "sources": "{{url}}",
     "quote_text": "教育・保育・医療等の業務従事者の性犯罪歴を確認する仕組み（日本版DBS）を導入"
 }},
 {{
     "title": "憲法への「自衛隊」明記",
     "reason": "「憲法改正」という最高法規の条文変更という、究極的に具体的かつ断定的な政治アクションを指しているため。",
-    "sources": "{{url}}",
     "quote_text": "憲法改正により「自衛隊」を明記"
 }}
-]
+],
 "not-manifesto": [
 {{
     "title": "燃料油価格の定額引下げ",
     "reason": "「価格の引下げ」という、数値や制度の裏付けのない目標であり実施の有無が客観的に判断できないため。",
-    "sources": "{{URL}}",
-    "quote_text": "燃料油価格の定額引下げ"
+    "quote_text": "原油価格高騰の影響を抑えるため、燃料油価格の定額引下げを行います。"
 }},
 {{
     "title": "高等教育の授業料等減免の対象拡大",
     "reason": "対象拡大、は具体的にどの変数を変更するのかが不明（世帯年収の基準、多子家庭への支援の増加など） ",
-    "sources": "https://miki-yamada.com/blog/12591.html",
-    "quote_text": "高等教育の授業料等減免の対象拡大"
-}}
+    "quote_text": "誰もが質の高い教育を受けられるよう、高等教育の授業料等減免の対象拡大を行います。"
+}},
 {{
     "title": "都心部における固定資産税や相続税などについて、税負担の軽減",
     "reason": "「軽減」とあるが何を変更することにより税負担を軽減させるのかが不明。",
-    "sources": "https://miki-yamada.com/blog/12601.html",
-    "quote_text": "都心部における固定資産税や相続税などについて、税負担の軽減"
-}}
+    "quote_text": "住み慣れた町に住み続けられるよう、都心部における固定資産税や相続税などについて、税負担の軽減を行います。"
+}},
 {{
     "title": "福祉分野を含む全産業の労務費転嫁と処遇改善を後押しします",
     "reason": "「後押し」の有無は客観的に判断することができない。また、「後押し」は結果へのコミットではない。",
-    "sources": "https://miki-yamada.com/blog/12572.html",
-    "quote_text": "福祉分野を含む全産業の労務費転嫁と処遇改善を後押しします"
-}}
+    "quote_text": "物価高を上回る賃上げのため、福祉分野を含む全産業の労務費転嫁と処遇改善を後押しします"
+}},
 {{
     "title": "保険料と公費負担のバランスを見直し",
     "reason": "「バランスの見直し」が何を意味するのか不明瞭であり、具体的にどの変数をどのように変更するのかが示されていない。また、「見直し」が実際に行われたかどうかの判断も主観的であるうえ、結果へのコミットではないため。",
-    "sources": "https://miki-yamada.com/blog/12587.html",
     "quote_text": "保険料と公費負担のバランスを見直し、全世代で公平に支える財源を安定させます"
-}}
+}},
 {{
     "title": "下請Gメンや公正取引委員会の人材（定員）の拡充",
     "reason": "「拡充」の有無が客観的に判断できない。また、水準が不明であるため。",
-    "sources":  "{{url}}",
-    "quote_text": "下請Gメンや公正取引委員会の人材拡充"
-}},
-
+    "quote_text": "価格転嫁を進めるため下請Gメンや公正取引委員会の体制拡充を行います。"
+}}
 ]
 
 
