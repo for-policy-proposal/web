@@ -1,46 +1,96 @@
+#openrouterへ変更
+
 import os
 import json
 import time
-import google.genai as genai
 from pathlib import Path
 import fitz
 from dotenv import load_dotenv 
 import concurrent.futures
 import requests
 import re
-from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import threading
 from tenacity import retry, stop_after_attempt, wait_fixed
-from htmldate import find_date
-from datetime import datetime
-
-def extract_json(text):
-    match = re.search(r'\{.*\}', text, re.DOTALL)
-    return match.group(0) if match else None
+from openrouter import OpenRouter
 
 load_dotenv()
 
 
-key = os.environ.get('GEMINI_API')
 
-client = genai.Client(api_key= key)
+api_key_openrouter = os.environ.get('OPENROUTER')
+url = os.environ.get('URL')
 
-
-@retry(stop=stop_after_attempt(3), wait=wait_fixed(5))
+@retry(stop=stop_after_attempt(5), wait=wait_fixed(5))
 def safe_generate_content(client, model, contents, config):
-    return client.models.generate_content(model=model, contents=contents, config=config)
+    full_text = "\n\n".join(str(c) for c in contents)
 
+    with OpenRouter(api_key=api_key_openrouter) as client:
+        response = client.chat.send(
+            model="~google/gemini-pro-latest",
+            messages=[{"role": "user", "content": full_text}],
+            response_format=config ,
+            server_url=url,
+            max_tokens=5000 
+        )
+        
+        content = response.choices[0].message.content
+        print(content)
+        
+
+        class SimpleResponse:
+            def __init__(self, text):
+                self.text = text
+        return SimpleResponse(content)
 
 
 ALL_WINNERS = {
     "tokyo": {
-        1: {
-            "name": "山田みき",
-            "official": "https://www.miki-yamada.com/",
+        22: {
+            "name": "伊藤達也",
+            "official": "https://www.tatsuyaito.com/",
             "party": "自由民主党"
         },
-
+        23: {
+            "name": "川松真一朗",
+            "official": "https://kawamatsu2011.com/",
+            "party": "自由民主党"
+        },
+        24: {
+            "name": "萩生田光一",
+            "official": "https://www.ko-1.jp/",
+            "party": "自由民主党"
+        },
+        25: {
+            "name": "井上信治",
+            "official": "https://www.inoue-s.jp/",
+            "party": "自由民主党"
+        },
+        26: {
+            "name": "今岡植",
+            "official": "https://imaoka-ueki.com/",
+            "party": "自由民主党"
+        },
+        27: {
+            "name": "黒崎祐一",
+            "official": "https://kuro1.jp/",
+            "party": "自由民主党"
+        },
+        28: {
+            "name": "安藤高夫",
+            "official": "https://andotakao.jp/",
+            "party": "自由民主党"
+        },
+        29: {
+            "name": "長澤興祐",
+            "official": "http://www.kosukenagasawa.com/",
+            "party": "自由民主党"
+        },
+        30: {
+            "name": "長島昭久",
+            "official": "https://nagashima30.com/",
+            "party": "自由民主党"
+        }
     }
 }
 
@@ -371,7 +421,6 @@ JSONとして正しい形で返してください。
     print(num)
     manifesto_file= Path(f"data/ai_output/2026/shu/{district}/{district}-{num}.json")
     print(manifesto_file)
-    print("data/ai_output/2026/shu/tokyo/tokyo-01.json")
     with open(manifesto_file, "r", encoding="utf-8") as f:
         try:
             data = json.load(f)
@@ -379,25 +428,62 @@ JSONとして正しい形で返してください。
         except Exception as e:
             print("JSON読み込み失敗",e)
             return
-
+        
+    print(data)
     print(f"started filtering for manifesto, {winner} in {district} {num} district")
     print("呼び出し")
     print("API call start")
     response = safe_generate_content(
-        client=client,
-        model='gemini-3.1-flash-lite-preview',
-        contents=[PROMPT_FILTER,json.dumps(data, ensure_ascii=False)],
-        config={"response_mime_type": "application/json"}
+        client=None,
+        #model='gemma-4-31b-it',
+        model='gemini-3.1-flash-lite',
+        contents=[PROMPT_FILTER,data],
+        config = {
+    "type": "json_schema",
+    "json_schema": {
+        "name": "manifesto_schema", # スキーマ名（英数字のみ）
+        "strict": True,               # スキーマを厳格に守らせる設定
+        "schema": {
+            "type": "object",
+            "properties": {
+                "manifesto": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {"type": "string", "description": "具体的施策の要約"},
+                            "reason": {"type": "string", "description": "なぜ公約なのか？"},
+                            "quote_text": {"type": "string", "description": "断定的な意思表明が含まれる部分を引用"}
+                        },
+                        "required": ["title", "reason", "quote_text"],
+                        "additionalProperties": False
+                    }
+                },
+                "not-manifesto": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "title": {"type": "string", "description": "公約から除外された政策の要約"},
+                            "reason": {"type": "string", "description": "なぜ公約としてみなせないのか？"},
+                            "quote_text": {"type": "string", "description": "引用部分"}
+                        },
+                        "required": ["title", "reason", "quote_text"],
+                        "additionalProperties": False
+                    }
+                }
+            },
+            "required": ["manifesto", "not-manifesto"],
+            "additionalProperties": False
+        }
+    }
+}
     )
     print("呼び出し終了")
     time.sleep(3)
     print(response)
-    try:
-        final_data=json.loads(response.text)
-    except json.JSONDecodeError as e:
-        print("JSONデコードエラー:", e)
-        return
-    
+    final_data=json.loads(response.text)
+
     out_file = Path(f"output/manifesto/{district}/{district}-{num}.json")
     out_file.parent.mkdir(parents=True, exist_ok=True)
 

@@ -1,0 +1,11 @@
+{
+  "district": "東京23区",
+  "candidates": [
+    {
+      "name": "川松真一朗",
+      "party": "自由民主党",
+      "manifesto": [],
+      "not-manifesto": []
+    }
+  ]
+}

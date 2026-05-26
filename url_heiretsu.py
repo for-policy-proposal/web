@@ -1,22 +1,20 @@
-#quoteはもう少し長めに
-
 
 import os
 import json
 import time
 import google.genai as genai
 from pathlib import Path
-import fitz
+#import fitz
 from dotenv import load_dotenv 
 import concurrent.futures
 import requests
 import re
 from bs4 import BeautifulSoup
-from urllib.parse import urljoin
+#from urllib.parse import urljoin
 import threading
 from tenacity import retry, stop_after_attempt, wait_fixed, wait_exponential
 from htmldate import find_date
-from datetime import datetime
+#from datetime import datetime
 
 def extract_json(text):
     match = re.search(r'\{.*\}', text, re.DOTALL)
@@ -68,7 +66,7 @@ def overlapping (district, num):
             client=client,
             model='gemma-4-31b-it',
             contents=[prompt, data_str],
-           config = {
+            config = {
                "type": "json_schema",
                "json_schema": {
                     "name": "overlapping_check", 
@@ -85,7 +83,8 @@ def overlapping (district, num):
                         "additionalProperties": False
                     }
                 }
-            }
+            },
+            max_tokens=10
         )
     
 
@@ -343,7 +342,7 @@ def safe_generate_content(client, model, contents, config):
             messages=[{"role": "user", "content": full_text}],
             response_format=config ,
             server_url=url ,
-            max_tokens=20000 )
+            max_tokens=10000 )
         
         content = response.choices[0].message.content
         print(content)
@@ -430,11 +429,6 @@ def save_append_data(out_file, district, num, winner, new_manifesto, new_not_man
 
 ALL_WINNERS = {
     "tokyo": {
-        6: {
-            "name": "畦元将吾",
-            "official": "https://azemoto.jp/",
-            "party": "自由民主党"
-        },
         20: {
             "name": "木原誠二",
             "official": "https://kiharaseiji.com/",
@@ -464,8 +458,32 @@ ALL_WINNERS = {
             "name": "井上信治",
             "official": "https://www.inoue-s.jp/",
             "party": "自由民主党"
+        },
+        26: {
+            "name": "今岡植",
+            "official": "https://imaoka-ueki.com/",
+            "party": "自由民主党"
+        },
+        27: {
+            "name": "黒崎祐一",
+            "official": "https://kuro1.jp/",
+            "party": "自由民主党"
+        },
+        28: {
+            "name": "安藤高夫",
+            "official": "https://andotakao.jp/",
+            "party": "自由民主党"
+        },
+        29: {
+            "name": "長澤興祐",
+            "official": "http://www.kosukenagasawa.com/",
+            "party": "自由民主党"
+        },
+        30: {
+            "name": "長島昭久",
+            "official": "https://nagashima30.com/",
+            "party": "自由民主党"
         }
-        
     }
 }
 
@@ -928,6 +946,9 @@ def get_manifesto(district,winner,num,party):
             print(f"  -> スキップ")
             return
         if 'https://www.politician.cafe' in url:
+            print(f"  -> スキップ")
+            return
+        if 'weblio' in url:
             print(f"  -> スキップ")
             return
 

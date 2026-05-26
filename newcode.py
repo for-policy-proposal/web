@@ -5,9 +5,10 @@ from pathlib import Path
 
 # --- パスの設定 ---
 # ウェブ公約のデータ (assign_ids.py で処理した後のデータ)
-WEB_DATA_DIR = Path("data")  # または output/finaldata
+WEB_DATA_DIR = Path("output/finaldata")  # または output/finaldata
 # 選挙公報のテキストデータ
 BULLETIN_DATA_DIR = Path("data/ai_output/2026/shu/tokyo")
+BULLETIN_MANIFESTO_DIR = Path("output/manifesto/tokyo/")  # 公約抽出後のデータ
 # 統合後のJSONを保存するフォルダ (Hugoが読み込む場所)
 OUTPUT_DIR = Path("data/2026/shu/tokyo")
 
@@ -48,7 +49,7 @@ def merge_district_data(district_num):
     filename_base = f"tokyo-{district_num:02d}"
     
     # データ読み込み
-    web_data = load_json(WEB_DATA_DIR / f"{filename_base}-final.json")
+    web_data = load_json(WEB_DATA_DIR / f"{filename_base}-api.json")
     bulletin_data = load_json(BULLETIN_DATA_DIR / f"{filename_base}.json")
     
     if not web_data or not bulletin_data:
@@ -98,5 +99,5 @@ def merge_district_data(district_num):
 
 if __name__ == "__main__":
     # 東京1区と2区を処理する (必要に応じて範囲を広げてください)
-    for i in range(1, 3):
+    for i in range(4,12):
         merge_district_data(i)

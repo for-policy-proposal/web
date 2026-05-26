@@ -61,21 +61,30 @@ def overlapping (district, num):
 
 
         print("AI")
-        response = safe_generate_gemma(
+        response = openrouter_gemma(
             client=client,
-            model='gemini-3.1-flash-lite',
+            model='gemma-4-31b-it',
             contents=[prompt, data_str],
-            config={
-        "response_mime_type": "application/json",
-        
-        "response_schema": {
-            "type": "OBJECT",
-            "properties": {
-                "is_overlapping": {"type": "BOOLEAN"} 
-            },
-            "required": ["is_overlapping"]
-        }
-    }
+           config = {
+               "type": "json_schema",
+               "json_schema": {
+                    "name": "overlapping_check", 
+                    "strict": True,               
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "is_overlapping": {
+                                "type": "boolean",
+                                "description": "重複しているかどうかの判定結果"
+                            }
+                        },
+                        "required": ["is_overlapping"],
+                        "additionalProperties": False
+                    }
+                }
+            }
+        )
+    
 
   #          config={
    #     "response_format": {
@@ -86,7 +95,7 @@ def overlapping (district, num):
         #    "required": ["is_overlapping"]
         #}
     #}
-        )
+        
 
 
         print("ai fin")
@@ -192,34 +201,28 @@ def overlapping (district, num):
 
 
         print("AI")
-        response = safe_generate_gemma(
+        response = openrouter_gemma(
             client=client,
             model='gemma-4-31b-it',
             contents=[prompt, data_str],
-            config={
-        "response_mime_type": "application/json",
-        
-        "response_schema": {
-            "type": "OBJECT",
-            "properties": {
-                "is_overlapping": {"type": "BOOLEAN"} 
-            },
-            "required": ["is_overlapping"]
-        }
-    }
-
-
-
-  #          config={
-   #     "response_format": {
-    #        "type": "OBJECT",
-      #      "mime_type": "application/json",
-     #       "properties": {
-       #         "is_overlapping": {"type": "BOOLEAN"} 
-        #    },
-         #   "required": ["is_overlapping"]
-        #}
-    #}
+           config = {
+               "type": "json_schema",
+               "json_schema": {
+                    "name": "overlapping_check", 
+                    "strict": True,               
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "is_overlapping": {
+                                "type": "boolean",
+                                "description": "重複しているかどうかの判定結果"
+                            }
+                        },
+                        "required": ["is_overlapping"],
+                        "additionalProperties": False
+                    }
+                }
+            }
         )
 
 
@@ -310,11 +313,13 @@ def overlapping (district, num):
 
 
 
-
+headers = {
+       'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0"
+    }
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=3, max=50))
 def safe_request_get(url):
-    res = requests.get(url, headers={'User-Agent': ''}, timeout=(12, 15))
+    res = requests.get(url, headers=headers, timeout=(12, 15))
     res.raise_for_status() 
     return res
 
@@ -347,6 +352,27 @@ def safe_generate_content(client, model, contents, config):
         return SimpleResponse(content)
 
  
+@retry(stop=stop_after_attempt(5), wait=wait_fixed(5))
+def openrouter_gemma(client, model, contents, config):
+    print(api_key_openrouter)
+    print(url)
+    full_text = "\n\n".join(str(c) for c in contents)
+
+    with OpenRouter(api_key=api_key_openrouter) as client:
+        response = client.chat.send(
+            model=model,
+            messages=[{"role": "user", "content": full_text}],
+            response_format=config ,
+            server_url=url )
+        
+        content = response.choices[0].message.content
+        print(content)
+        
+
+        class SimpleResponse:
+            def __init__(self, text):
+                self.text = text
+        return SimpleResponse(content)
 
 key = os.environ.get('GEMINI_API')
 client = genai.Client(api_key= key)
@@ -400,21 +426,6 @@ def save_append_data(out_file, district, num, winner, new_manifesto, new_not_man
 
 ALL_WINNERS = {
     "tokyo": {
-        10: {
-            "name": "鈴木隼人",
-            "official": "https://www.suzukihayato.jp/",
-            "party": "自由民主党"
-        },
-        11: {
-            "name": "下村博文",
-            "official": "https://www.hakubun.biz/",
-            "party": "自由民主党"
-        },
-        12: {
-            "name": "高木啓",
-            "official": "https://takagi-kei.com/",
-            "party": "自由民主党"
-        },
         13: {
             "name": "土田慎",
             "official": "http://www.tsuchida-shin.jp/",
@@ -1012,21 +1023,28 @@ def get_manifesto(district,winner,num,party):
 
     """
         
-        response = safe_generate_gemma(
+        response = openrouter_gemma(
             client=client,
             model='gemma-4-31b-it',
             contents=[prompt, clean_text],
-            config={
-        "response_mime_type": "application/json",
-       
-        "response_schema": {
-            "type": "OBJECT",
-            "properties": {
-                "is_policy": {"type": "BOOLEAN"} 
-            },
-            "required": ["is_policy"]
-        }
-    }
+           config = {
+               "type": "json_schema",
+               "json_schema": {
+                    "name": "policy_or_not", 
+                    "strict": True,               
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "is_policy": {
+                                "type": "boolean",
+                                "description": "政策か判断"
+                            }
+                        },
+                        "required": ["is_policy"],
+                        "additionalProperties": False
+                    }
+                }
+            }
             #response_format={
             #    "type": "OBJECT",
              #   "mime_type": "application/json", 
@@ -1106,12 +1124,12 @@ def organize_text(text):
     応答は、整理されたテキストのみを返してください。解説や挨拶、Markdown装飾（```json等）は一切禁止します。
     """
     #gemma-4-31b-it
-    response = safe_generate_gemma(
+    response = openrouter_gemma(
         client=client,
-        model='gemini-3.1-flash-lite',
+        model='google/gemma-4-26b-a4b-it',
         contents=[prompt,text],
-        config={"response_mime_type": "text/plain"}
-       # config={"response_format": {"type": "text/plain"}}
+        #config={"response_mime_type": "text/plain"}
+        config={"response_format": {"type": "text/plain"}}
     )
     print("organize text fin")
 

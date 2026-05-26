@@ -9,3 +9,5 @@ data/raw_pdf
 old_stuff/
 #output/
 draft.py
+output/api
+check_other_ai.py
