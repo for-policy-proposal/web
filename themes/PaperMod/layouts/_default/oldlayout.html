@@ -17,11 +17,6 @@
 
 <head>
     {{- partial "head.html" . }}
-    {{ with (templates.Defer (dict "key" "global")) }}
-        {{ partial "css.html" . }}
-    {{ end }}
-
-
 </head>
 
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
@@ -39,8 +34,6 @@
 
 
 <style>
-
-
   .pledge-container {
   
    font-family: "Inter";
@@ -161,24 +154,42 @@
     font-weight: bold;
   }
 </style>
+
 <div class="pledge-container">
 
+
   {{ $district_code := .Params.district_code }}
+
   {{ $dot_path := replace $district_code "-" "." }}
-  {{ $parts := split $district_code "-" }}
+  
+
+
+{{ $parts := split $district_code "-" }}
+
 
   {{ $year := index $parts 0 }}     
   {{ $type := index $parts 1 }}    
   {{ $pref := index $parts 2 }}   
   {{ $num_raw := index $parts 3 }} 
   
+  
   {{ $num := printf "%02s" $num_raw }}
-  {{ $pdf_path := printf "/pdf/%s/%s/%s/%s-%s.pdf" $year $type $pref $pref $num }}
+
+{{ $pdf_path := printf "/pdf/%s/%s/%s/%s-%s.pdf" $year $type $pref $pref $num }}
+
+
+
 
   {{ $districtData := index site.Data (split $dot_path ".") }}
 
   {{ if $districtData }}
+ 
+  
     {{ $candidate := index $districtData.candidates 0 }}
+    
+
+    
+
 
     <header class="candidate-header">
       <div class="candidate-party">{{ $candidate.party }}</div>
@@ -187,73 +198,44 @@
 
     <section>
       <h2><i class="fas fa-file-contract"></i> 選挙公報からの公約抽出</h2>
-      {{ if and (isset $candidate.bulletin "manifesto") (gt (len $candidate.bulletin.manifesto) 0) }}
-        {{ range $candidate.bulletin.manifesto }}
-          {{ $master := index $.Site.Data.policies .policy_id }}
-          <div class="pledge-card">
-            
-            {{ if $master.evidence }}
-              <a href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
-                <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}" style="cursor: pointer;">
-                  {{ $master.status | default "未確認" }} <i class="fas fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
-                </span>
-              </a>
-            {{ else }}
-              <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
-                {{ $master.status | default "未確認" }}
-              </span>
-            {{ end }}
-
-            <span class="pledge-title">{{ .title }}</span>
-            <div class="quote-box">「{{ .quote_text }}」</div>
-            <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
+      {{ range $candidate.bulletin.manifesto }}
+    
+      
+        {{ $master := index $.Site.Data.policies .policy_id }}
+        <div class="pledge-card">
+          <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
+            {{ $master.status | default "未確認" }}
+          </span>
+          <span class="pledge-title">{{ .title }}</span>
+          <div class="quote-box">「{{ .quote_text }}」</div>
+           <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
             <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
-          </div>
-        {{ end }}
-      {{ else }}
-        <div class="pledge-card" style="border-left: 4px solid #94a3b8; background-color: #f8fafc;">
-          <span class="pledge-title" style="font-size: 1.1rem; color: #64748b;">データが見つかりませんでした</span>
-          <p class="reason-text" style="margin: 0; color: #64748b;">
-            公約とみなせる政策がなかったか、あるいはデータを見つけられなかった可能性があります。
-          </p>
+       
         </div>
+      {{ else }}
+        <p>公報から抽出された具体的な公約は現在ありません。</p>
       {{ end }}
     </section>
 
     <section>
       <h2><i class="fas fa-globe"></i> ウェブサイト等での公約</h2>
-      {{ if and (isset $candidate.web "manifesto") (gt (len $candidate.web.manifesto) 0) }}
-        {{ range $candidate.web.manifesto }}
-          {{ $master := index $.Site.Data.policies .policy_id }}
-          <div class="pledge-card">
-            
-            {{ if $master.evidence }}
-              <a href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
-                <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}" style="cursor: pointer;">
-                  {{ $master.status | default "未確認" }} <i class="fas fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
-                </span>
-              </a>
-            {{ else }}
-              <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
-                {{ $master.status | default "未確認" }}
-              </span>
-            {{ end }}
+      {{ range $candidate.web.manifesto }}
+        {{ $master := index $.Site.Data.policies .policy_id }}
+        <div class="pledge-card">
+          <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
+            {{ $master.status | default "未確認" }}
+          </span>
+          <span class="pledge-title">{{ .title }}</span>
+          <div class="quote-box">「{{ .quote_text }}」</div>
+          <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
+    
 
-            <span class="pledge-title">{{ .title }}</span>
-            <div class="quote-box">「{{ .quote_text }}」</div>
-            <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
-     
+          <div><a href="{{ .sources}}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></div>
+          <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
 
-            <div><a href="{{ .sources }}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></div>
-            <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
-          </div>
-        {{ end }}
-      {{ else }}
-        <div class="pledge-card" style="border-left: 4px solid #94a3b8; background-color: #f8fafc;">
-          <span class="pledge-title" style="font-size: 1.1rem; color: #64748b;">データが見つかりませんでした</span>
-          <p class="reason-text" style="margin: 0; color: #64748b;">
-            公約とみなせる政策がなかったか、あるいはデータを見つけられなかった可能性があります。
-          </p>
+ 
+       
+       
         </div>
       {{ end }}
     </section>

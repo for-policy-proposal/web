@@ -1,0 +1,89 @@
+{
+  "district": "東京29区",
+  "candidates": [
+    {
+      "name": "長澤興祐",
+      "party": "自由民主党",
+      "manifesto": [],
+      "not-manifesto": [
+        {
+          "title": "子育て支援の拡充",
+          "reason": "「拡充」は具体的にどの制度や数値を変更するのかが不明であり、実施の有無を客観的に判定できないため。",
+          "sources": "https://go2senkyo.com/seijika/155761/posts/1286933",
+          "quote_text": "子育て支援の拡充"
+        },
+        {
+          "title": "安全安心のための防災まちづくり",
+          "reason": "「防災まちづくり」は抽象的なスローガンであり、具体的にどの法令や予算を変更するのかが全く示されていないため。",
+          "sources": "https://go2senkyo.com/seijika/155761/posts/1286933",
+          "quote_text": "安全安心のための防災まちづくり"
+        },
+        {
+          "title": "保育・教育の格差是正",
+          "reason": "「格差是正」という抽象的なスローガンであり、具体的にどの制度のどの数値を変更（無償化など）するのかが明確でないため。",
+          "sources": "https://ponmitrend.com/nagasawakousuke-wiki/",
+          "quote_text": "保育・教育の格差是正（幼稚園・保育園の給食費等）"
+        },
+        {
+          "title": "荒川・足立の防災強化",
+          "reason": "「荒川・足立」という特定地域への利益誘導であり、かつ「強化」「改善」という客観的に検証不能な表現であるため。",
+          "sources": "https://ponmitrend.com/nagasawakousuke-wiki/",
+          "quote_text": "荒川・足立の防災強化（水害対策・避難所環境の改善）"
+        },
+        {
+          "title": "手取りを増やす経済対策",
+          "reason": "「負担軽減」という抽象的な表現に留まっており、どの税率や社会保険料の数値をどう変更するのかが指定されていないため。",
+          "sources": "https://ponmitrend.com/nagasawakousuke-wiki/",
+          "quote_text": "手取りを増やす経済対策（現役世代への負担軽減）"
+        },
+        {
+          "title": "政治とカネの問題解決",
+          "reason": "「透明性の確保」「ルールの厳格化」という抽象的な概念の羅列であり、具体的にどの法律を改正するか等の客観的判定ができないため。",
+          "sources": "https://ponmitrend.com/nagasawakousuke-wiki/",
+          "quote_text": "政治とカネの問題解決（透明性の確保・ルールの厳格化）"
+        },
+        {
+          "title": "子育てを徹底支援",
+          "reason": "「徹底」が含まれる表現であり、具体性を欠く抽象的なスローガンのため。",
+          "sources": "http://www.kosukenagasawa.com/policy/",
+          "quote_text": "子育てを徹底支援"
+        },
+        {
+          "title": "幼児期の保育と教育の質を向上",
+          "reason": "「向上」は抽象的な目標であり、客観的な検証ができないため。",
+          "sources": "http://www.kosukenagasawa.com/policy/",
+          "quote_text": "幼児期の保育と教育の質を向上"
+        },
+        {
+          "title": "幼保一体化の推進",
+          "reason": "「推進」という手続き・意欲表現が含まれているため却下。",
+          "sources": "http://www.kosukenagasawa.com/policy/",
+          "quote_text": "幼保一体化の推進"
+        },
+        {
+          "title": "現場支援の拡充",
+          "reason": "「拡充」という動詞が含まれており、明確なYes/Noで判断できないため。",
+          "sources": "http://www.kosukenagasawa.com/policy/",
+          "quote_text": "現場支援の拡充"
+        },
+        {
+          "title": "教育のDX化を推進",
+          "reason": "「推進」という手続き・意欲表現が含まれているため却下。",
+          "sources": "http://www.kosukenagasawa.com/policy/",
+          "quote_text": "教育のDX化を推進"
+        },
+        {
+          "title": "デジタル人材育成",
+          "reason": "「育成」という抽象的な行動であり、客観的な達成度の判定が不可能なため。",
+          "sources": "http://www.kosukenagasawa.com/policy/",
+          "quote_text": "デジタル人材育成"
+        },
+        {
+          "title": "データによる学習の個別最適化",
+          "reason": "「最適化」という抽象的な状態であり、具体的な法的措置・制度変更に該当しないため。",
+          "sources": "http://www"
+        }
+      ]
+    }
+  ]
+}

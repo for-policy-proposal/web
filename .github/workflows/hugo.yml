@@ -29,7 +29,9 @@ defaults:
 jobs:
   # Build job
   build:
+    
     runs-on: ubuntu-latest
+    
     env:
       HUGO_VERSION: 0.154.3
 
@@ -61,7 +63,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-
+  
   # Deployment job
   deploy:
     environment:

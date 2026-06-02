@@ -1,0 +1,46 @@
+{
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/typography": "^0.5.19",
+    "daisyui": "^5.5.20",
+    "tailwindcss": "^4.3.0"
+  },
+  "name": "minerva-1",
+  "version": "1.0.0",
+  "description": "> **日本の政治を変える**",
+  "main": "GAS.js",
+  "dependencies": {
+    "cssesc": "^3.0.0",
+    "detect-libc": "^2.1.2",
+    "enhanced-resolve": "^5.22.1",
+    "graceful-fs": "^4.2.11",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "jiti": "^2.7.0",
+    "lightningcss": "^1.32.0",
+    "lightningcss-darwin-x64": "^1.32.0",
+    "magic-string": "^0.30.21",
+    "mri": "^1.2.0",
+    "node-addon-api": "^7.1.1",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.4",
+    "postcss-selector-parser": "^6.0.10",
+    "source-map-js": "^1.2.1",
+    "tapable": "^2.3.3",
+    "util-deprecate": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/North-river1015/Minerva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/North-river1015/Minerva/issues"
+  },
+  "homepage": "https://github.com/North-river1015/Minerva#readme"
+}

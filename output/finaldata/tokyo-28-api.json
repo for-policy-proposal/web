@@ -1,0 +1,193 @@
+{
+  "district": "東京28区",
+  "candidates": [
+    {
+      "name": "安藤高夫",
+      "party": "自由民主党",
+      "manifesto": [
+        {
+          "title": "食料品消費税の2年間0%化",
+          "reason": "税率を0%、期間を2年間とする具体的な数値変更を伴う制度変更であり、実施の有無が客観的に判定可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "食料品消費税を２年間ゼロを実現する。"
+        },
+        {
+          "title": "消費税の5%への減税",
+          "reason": "税率を5%にするという具体的なパラメーターの変更を伴う法改正の実施と結果が確認できるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "緊急に5％に減税と"
+        },
+        {
+          "title": "インボイス制度の廃止",
+          "reason": "特定の制度（インボイス）の「廃止」という明確なステータス変更を含む断定的な意思表明であるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "インボイスの廃止。"
+        },
+        {
+          "title": "大企業の内部留保への新規課税",
+          "reason": "新たな課税対象の設定という明確な制度的ステータス変更を指しており、税制改正の有無で検証可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "大企業の内部留保に課税した財源で"
+        },
+        {
+          "title": "最低賃金の1500円以上への引き上げ",
+          "reason": "最低賃金1500円という具体的な数値が含まれており、制度上の条件変更の実施が客観的に確認可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "最低賃金を直ちに１５００円以上に。"
+        },
+        {
+          "title": "大学の学費の半額減免",
+          "reason": "「半額に」という条件・数値の具体的な変更であり、制度化の有無による検証が可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "直ちに半額に"
+        },
+        {
+          "title": "大学の入学金の廃止",
+          "reason": "特定の制度（入学金）の「廃止」というステータス変更を伴う断定的なアクションであるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "②入学金の廃止"
+        },
+        {
+          "title": "返済中の奨学金の半額免除",
+          "reason": "「半額に」という対象変数の変更を含む明確な制度変更であり、実施が客観的に確認できるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "返済中の人は半額に。"
+        },
+        {
+          "title": "小中学校生の修学旅行・制服・学用品の無償化",
+          "reason": "「無償化」という具体的な費用負担免除（制度変更）を含み、実施可否が客観的に検証できるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "小中学校生の④修学旅行・制服・学用品の無償化"
+        },
+        {
+          "title": "公共料金の子供料金対象年齢を18歳まで拡大",
+          "reason": "「18歳まで」という明確な変数・制度条件の変更を示しているため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "⑤公共料金の子供料金を１８歳まで拡大"
+        },
+        {
+          "title": "外国人の受け入れ人数への上限設定",
+          "reason": "受入人数に対する「上限の設定」という明確で観測可能な条件付与であり、法的・制度的アクションを伴うため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "外国人の受け入れ人数は上限を決め"
+        }
+      ],
+      "not-manifesto": [
+        {
+          "title": "小さなお子さんや医療的ケアに関する対応",
+          "reason": "文章が途切れており、特定の変数（数値や法律など）の明確な操作や断定的なコミットメントが確認できないため。",
+          "sources": "https://mf.jiho.jp/article/265304",
+          "quote_text": "社会保障については「小さなお子さんや医療的ケア..."
+        },
+        {
+          "title": "暮らしに直結する政策の強化等",
+          "reason": "「強化し」「築く」といった抽象的なスローガンおよび意欲表現に過ぎないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "暮らしに直結する政策を強化し、安心して生活できる持続的な経済基盤を築く。"
+        },
+        {
+          "title": "働き手・設備投資に促進する制度設計の急務",
+          "reason": "「急務である」という現状認識および抽象的な方向性を示すのみのため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "働き手、設備投資に促進する制度設計が急務である。"
+        },
+        {
+          "title": "手取り・年金の引き上げ",
+          "reason": "「もっと」引き上げるという数値目標のない抽象的表明であり、客観的な検証が不可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "手取り・年金いずれも早急に「もっと」引き上げることにより"
+        },
+        {
+          "title": "資産運用立国の実現",
+          "reason": "「目指します」という明確な手続き・意欲表現であり、公約とはみなせないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "本来の「資産運用立国」を目指します。"
+        },
+        {
+          "title": "消費税の廃止",
+          "reason": "「めざし」という目標や意欲を示す手続き表現であり、断定的な政治的コミットメントではないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "消費税の廃止めざし、"
+        },
+        {
+          "title": "優遇税制の見直し",
+          "reason": "「見直し」という客観的な完了条件が不明瞭な動詞が含まれており、排除基準に該当するため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "大企業と大金持ちへの優遇税制の見直しで。"
+        },
+        {
+          "title": "ケア現場で働く人の賃上げ促進",
+          "reason": "「進める」という意欲・手続き表現であり、具体的なアクションが含まれていないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "ケア現場で働く人の賃上げを政治の責任で進める。"
+        },
+        {
+          "title": "必要な「力」の整備",
+          "reason": "「べき」という抽象的な意気込みや方向性であり、客観的に観測可能な制度変更を含まないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "必要な「力」を自ら整備し、その行使についても躊躇しない土壌を醸成していくべき。"
+        },
+        {
+          "title": "持続可能な社会保障制度を築く政策の推進",
+          "reason": "「充実」「推進」「強化」「進める」など、抽象的かつ手続き的な表現に終始しており検証不可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "地域医療の充実、介護人材の確保、予防医療の推進、子育て支援の強化など、持続可能な社会保障制度を築く政策を進める。"
+        },
+        {
+          "title": "制度づくり・労働市場づくりの後押し",
+          "reason": "「進める」「後押しをするべき」という、客観的に検証不能な方向性や手続き表現のみであるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "また子育て・教育にできる限りお金のかかりにくい制度づくりを進める。また若くして出産しても女性のキャリア形成が阻まれることがない労働市場づくりを政府としても後押しをするべき。"
+        },
+        {
+          "title": "幼児教育・保育の家計支援の拡充",
+          "reason": "「拡充」の有無は基準が曖昧であり、客観的にYes/Noでの判定が不可能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "０～２歳の幼児教育・保育の家計支援の拡充。"
+        },
+        {
+          "title": "未就学児の完全無償化",
+          "reason": "「めざす」という目標・意欲を示す表現が含まれており、排除基準に該当するため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "未就学児についても所得制限のない完全無償化をめざす。"
+        },
+        {
+          "title": "教育無償化の推進",
+          "reason": "「進める」という手続き表現であり、具体的なコミットメントがないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "教育無償化を進める。"
+        },
+        {
+          "title": "大学学費のゼロ化",
+          "reason": "「目指し」という意欲表現であり、除外基準に該当するため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "大学の①学費ゼロを目指し"
+        },
+        {
+          "title": "給付型奨学金の大幅な拡大",
+          "reason": "「大幅に拡大」は変数が明確でなく、基準が主観的であるため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "③給付型奨学金を大幅に拡大し"
+        },
+        {
+          "title": "少人数学級化の推進",
+          "reason": "「進める」という意欲表現にとどまり、客観的な完了条件が定義されていないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "⑥教員を増やし少人数学級化を進める。"
+        },
+        {
+          "title": "高校などの理不尽な校則改善",
+          "reason": "「理不尽な」は主観的であり、「改善」は基準が曖昧で検証不能なため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "⑦高校などの理不尽な校則改善"
+        },
+        {
+          "title": "就活セクハラ根絶の推進",
+          "reason": "「進める」という意欲表現であり、具体的な法的・制度的メカニズムが示されていないため。",
+          "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+          "quote_text": "⑧就活セクハラ根絶を進める。"
+        }
+      ]
+    }
+  ]
+}

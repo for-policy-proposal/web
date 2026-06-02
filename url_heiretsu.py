@@ -84,7 +84,6 @@ def overlapping (district, num):
                     }
                 }
             },
-            max_tokens=10
         )
     
 
@@ -429,44 +428,12 @@ def save_append_data(out_file, district, num, winner, new_manifesto, new_not_man
 
 ALL_WINNERS = {
     "tokyo": {
-        20: {
-            "name": "木原誠二",
-            "official": "https://kiharaseiji.com/",
-            "party": "自由民主党"
-        },
-        21: {
-            "name": "小田原潔",
-            "official": "https://odawarakiyoshi.jp/",
-            "party": "自由民主党"
-        },
-        22: {
-            "name": "伊藤達也",
-            "official": "https://www.tatsuyaito.com/",
-            "party": "自由民主党"
-        },
-        23: {
-            "name": "川松真一朗",
-            "official": "https://kawamatsu2011.com/",
-            "party": "自由民主党"
-        },
-        24: {
-            "name": "萩生田光一",
-            "official": "https://www.ko-1.jp/",
-            "party": "自由民主党"
-        },
+
+
+
         25: {
             "name": "井上信治",
             "official": "https://www.inoue-s.jp/",
-            "party": "自由民主党"
-        },
-        26: {
-            "name": "今岡植",
-            "official": "https://imaoka-ueki.com/",
-            "party": "自由民主党"
-        },
-        27: {
-            "name": "黒崎祐一",
-            "official": "https://kuro1.jp/",
             "party": "自由民主党"
         },
         28: {
@@ -479,16 +446,33 @@ ALL_WINNERS = {
             "official": "http://www.kosukenagasawa.com/",
             "party": "自由民主党"
         },
-        30: {
-            "name": "長島昭久",
-            "official": "https://nagashima30.com/",
-            "party": "自由民主党"
-        }
     }
 }
 
 
-'''    
+''' overlapping    
+
+25: {
+            "name": "井上信治",
+            "official": "https://www.inoue-s.jp/",
+            "party": "自由民主党"
+        },
+        28: {
+            "name": "安藤高夫",
+            "official": "https://andotakao.jp/",
+            "party": "自由民主党"
+        },
+        29: {
+            "name": "長澤興祐",
+            "official": "http://www.kosukenagasawa.com/",
+            "party": "自由民主党"
+        },
+
+20: {
+            "name": "木原誠二",
+            "official": "https://kiharaseiji.com/",
+            "party": "自由民主党"
+        },
 
         2: {
             "name": "辻清人",
@@ -620,6 +604,7 @@ ALL_WINNERS = {
             "official": "https://kuro1.jp/",
             "party": "自由民主党"
         },
+        
         28: {
             "name": "安藤高夫",
             "official": "https://andotakao.jp/",
@@ -951,6 +936,10 @@ def get_manifesto(district,winner,num,party):
         if 'weblio' in url:
             print(f"  -> スキップ")
             return
+        if 'seijika-wiki' in url:
+            print(f"  -> スキップ")
+            return
+      
 
         start = time.time()
         try:
