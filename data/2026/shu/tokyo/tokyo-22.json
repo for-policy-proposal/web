@@ -66,13 +66,6 @@
             "policy_id": "policy_103"
           },
           {
-            "title": "給付付き税額控除の導入",
-            "reason": "「給付付き税額控除」という特定の新規制度の設立を断定的に明言しており、法制化等の有無により客観的に達成が判定できるため。",
-            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51308",
-            "quote_text": "真に困っている人に迅速な給付を届けるため、給付付き税額控除を実現します。",
-            "policy_id": "policy_004"
-          },
-          {
             "title": "行政データベースの統合",
             "reason": "「データベースを統合して」と、行政システムのデータ共有や運用ステータスの明確な変更を約束しており、検証可能なアクションであるため。",
             "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51308",
@@ -85,13 +78,6 @@
             "sources": "https://go2senkyo.com/seijika/89285",
             "quote_text": "再発防止：独立性が確保された第三者機関の早期立ち上げ。",
             "policy_id": "policy_105"
-          },
-          {
-            "title": "憲法改正の国民投票の実施",
-            "reason": "「国民投票」という憲法上の明確な公的手続きの実施を明言しており、実施されたかどうかが完璧に客観的検証可能であるため。",
-            "sources": "https://go2senkyo.com/seijika/89285",
-            "quote_text": "早期に国民投票を実施いたします。",
-            "policy_id": "policy_106"
           }
         ],
         "not_manifesto": []
