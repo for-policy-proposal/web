@@ -28,7 +28,38 @@
             "body": "・政治資金の透明化、クリーンな運用<br>・世襲・派閥依存から脱却、女性・若者の挑戦を応援"
           }
         ],
-        "manifesto": []
+        "manifesto": [
+          {
+            "title": "子ども支援の所得制限撤廃",
+            "reason": "「所得制限」という具体的な変数の「撤廃」という明確な制度変更を伴い客観的に検証可能であるため。",
+            "quote_text": "あらゆる子ども支援の所得制限撤廃",
+            "policy_id": "policy_043"
+          },
+          {
+            "title": "「防衛三文書」の前倒し改定",
+            "reason": "特定の政府文書の「改定」という具体的なアクションを指しており実施の有無が客観的に判断できるため。",
+            "quote_text": "「防衛三文書」前倒し改定",
+            "policy_id": "policy_126"
+          },
+          {
+            "title": "インテリジェンス機関の設置",
+            "reason": "新規の公的機関の設立という具体的な制度構築アクションを明言しておりその存否が客観的に確認可能なため。",
+            "quote_text": "インテリジェンス機関設置",
+            "policy_id": "policy_125"
+          },
+          {
+            "title": "スパイ防止法の制定",
+            "reason": "「新法の制定」という明確かつ具体的な政治的コミットメントであり法律の有無で検証可能であるため。",
+            "quote_text": "スパイ防止法制定",
+            "policy_id": "policy_045"
+          },
+          {
+            "title": "日本版CFIUSの設置",
+            "reason": "特定の新規制度の設立を明言しておりその存否が客観的に確認可能なため。",
+            "quote_text": "日本版CFIUS(外国投資審査)の設置",
+            "policy_id": "policy_002"
+          }
+        ]
       },
       "web": {
         "manifesto": [
@@ -36,31 +67,36 @@
             "title": "子ども支援の所得制限撤廃",
             "reason": "「所得制限」という制度上の具体的な条件を「撤廃」するという客観的に検証可能なコミットメントであるため。",
             "sources": "https://go2senkyo.com/seijika/192403",
-            "quote_text": "あらゆる子ども支援の所得制限撤廃"
+            "quote_text": "あらゆる子ども支援の所得制限撤廃",
+            "policy_id": "policy_043"
           },
           {
             "title": "「防衛三文書」の改定",
             "reason": "「防衛三文書」という特定の公文書を「改定」するという、政府の具体的なアクションの有無を客観的に判定できるため。",
             "sources": "https://go2senkyo.com/seijika/192403",
-            "quote_text": "「防衛三文書」前倒し改定"
+            "quote_text": "「防衛三文書」前倒し改定",
+            "policy_id": "policy_044"
           },
           {
             "title": "インテリジェンス機関の設置",
             "reason": "「機関設置」という新規組織の創設を明示しており、その存否によって実施の有無を明確に判定できるため。",
             "sources": "https://go2senkyo.com/seijika/192403",
-            "quote_text": "インテリジェンス機関設置"
+            "quote_text": "インテリジェンス機関設置",
+            "policy_id": "policy_025"
           },
           {
             "title": "スパイ防止法の制定",
             "reason": "新法の「制定」という法的手続きの有無によって実行されたかが客観的に判定可能であるため。",
             "sources": "https://go2senkyo.com/seijika/192403",
-            "quote_text": "スパイ防止法制定"
+            "quote_text": "スパイ防止法制定",
+            "policy_id": "policy_045"
           },
           {
             "title": "日本版CFIUSの設置",
             "reason": "特定の新規制度・機関の「設置」を明言しており、その存否が客観的に確認可能なため。",
             "sources": "https://go2senkyo.com/seijika/192403",
-            "quote_text": "日本版CFIUSの設置"
+            "quote_text": "日本版CFIUSの設置",
+            "policy_id": "policy_002"
           }
         ],
         "not_manifesto": []

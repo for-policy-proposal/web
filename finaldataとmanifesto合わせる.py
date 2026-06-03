@@ -52,8 +52,11 @@ def merge_district_data(district_num):
     web_data = load_json(WEB_DATA_DIR / f"{filename_base}-api.json")
     bulletin_data = load_json(BULLETIN_DATA_DIR / f"{filename_base}.json")
     
+    # 【修正】公約抽出済みの選挙公報JSON（output/manifesto/tokyo/tokyo-01.json）を読み込む
+    bulletin_manifesto_data = load_json(BULLETIN_MANIFESTO_DIR / f"{filename_base}.json")
+    
     if not web_data or not bulletin_data:
-        print(f"スキップ: {filename_base} のデータが揃っていません。")
+        print(f"スキップ: {filename_base} の基本データ（WEBまたは公報テキスト）が揃っていません。")
         return
 
     # 統合先の枠組みを作成
@@ -67,12 +70,23 @@ def merge_district_data(district_num):
     for web_candidate in web_data.get("candidates", []):
         cand_name = web_candidate.get("name")
         
-        # bulletin_data から同じ名前の候補者を探す
+        # bulletin_data（テキスト側）から同じ名前の候補者を探す
         bulletin_cand = next((c for c in bulletin_data.get("candidates", []) if c.get("name") == cand_name), {})
         
         # 選挙公報テキストの整形
         raw_text = bulletin_cand.get("full_text", "")
         formatted_blocks = format_bulletin_text(raw_text)
+
+        # 【修正】抽出済み公報データ（bulletin_manifesto_data）から、この候補者の公約リストを探す
+        extracted_manifestos = []
+        if bulletin_manifesto_data:
+            # 構造が「直下に manifesto キー」の場合
+            if "manifesto" in bulletin_manifesto_data:
+                extracted_manifestos = bulletin_manifesto_data.get("manifesto", [])
+            # 構造が「candidates の中に各候補者ごとの manifesto」があるパターンの場合（安全のための分岐）
+            elif "candidates" in bulletin_manifesto_data:
+                m_cand = next((c for c in bulletin_manifesto_data.get("candidates", []) if c.get("name") == cand_name), {})
+                extracted_manifestos = m_cand.get("manifesto", [])
 
         # 1人の候補者のデータを組み立てる
         merged_candidate = {
@@ -80,8 +94,8 @@ def merge_district_data(district_num):
             "party": web_candidate.get("party", ""),
             "bulletin": {
                 "full_text_blocks": formatted_blocks,
-                # 選挙公報からも公約を抽出している場合はここに入れる
-                "manifesto": bulletin_cand.get("manifesto", []) 
+                # 【修正】正しく抽出された公約データをセットする
+                "manifesto": extracted_manifestos 
             },
             "web": {
                 # ウェブからの公約（policy_id付き）
@@ -99,5 +113,5 @@ def merge_district_data(district_num):
 
 if __name__ == "__main__":
     # 東京1区と2区を処理する (必要に応じて範囲を広げてください)
-    for i in range(4,12):
+    for i in range(2, 31):
         merge_district_data(i)

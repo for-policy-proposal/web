@@ -1,0 +1,45 @@
+{
+  "district": "東京16区",
+  "district_code": "2026-shu-tokyo-16",
+  "candidates": [
+    {
+      "name": "大西洋平",
+      "party": "自由民主党",
+      "bulletin": {
+        "full_text_blocks": [
+          {
+            "header": "8つの決意",
+            "body": "1 物価高騰対策を！<br>皆様に実感していただける物価高騰対策を！<br>2 子育て支援のさらなる充実！<br>3 地場産業振興に取り組みます！<br>江戸川区の魅力発信・<br>4 異常気象による水害、地震に備える<br>安心・安全の江戸川区へ。<br>大規模火災を防ぐー<br>5 地方議会の成功事例を<br>国の課題に活かす！<br>6 日本を守る安全保障政策、<br>確固たる防衛力の強化を！<br>7 未来を育む教育の充実・<br>スポーツ振興、SNSを<br>より安全に！<br>8 江戸川区選出議員として、<br>区の国政課題に取り組む！"
+          }
+        ],
+        "manifesto": []
+      },
+      "web": {
+        "manifesto": [
+          {
+            "title": "収入に応じた負担割合となる制度への変更",
+            "reason": "「制度に変更」という明確なステータス変更を断言しており、関連法の改正の有無によって実施状況が客観的に検証可能であるため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51288",
+            "quote_text": "収入に応じた負担割合となる制度に変更",
+            "policy_id": "policy_090"
+          },
+          {
+            "title": "ガソリン暫定税率の廃止",
+            "reason": "「廃止」という制度の停止（ステータス変更）を明示しており、法改正に伴う客観的な検証が可能であるため。",
+            "sources": "https://note.com/edogawa_aki/n/n2adb6b16a0bd",
+            "quote_text": "ガソリン暫定税率の廃止",
+            "policy_id": "policy_047"
+          },
+          {
+            "title": "所得減税",
+            "reason": "「減税」という具体的な税制上のパラメータ変更を明示しており、法改正の有無によって実行されたかが客観的に判断可能であるため。",
+            "sources": "https://note.com/edogawa_aki/n/n2adb6b16a0bd",
+            "quote_text": "所得減税",
+            "policy_id": "policy_020"
+          }
+        ],
+        "not_manifesto": []
+      }
+    }
+  ]
+}

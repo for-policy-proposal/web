@@ -9,43 +9,50 @@
           "title": "憲法9条の改正と自衛隊の明記",
           "reason": "憲法9条という具体的な条文の改正および自衛隊の存在を明記する法改正は、条文の変更事実により客観的に達成状況を判定できるため。",
           "sources": "https://ja.wikipedia.org/wiki/%E5%9C%9F%E7%94%B0%E6%85%8E",
-          "quote_text": "9条を改正し、自衛隊の存在を明記すべきとする。"
+          "quote_text": "9条を改正し、自衛隊の存在を明記すべきとする。",
+          "policy_id": "policy_059"
         },
         {
           "title": "裁量労働時間制の適用拡大",
           "reason": "「裁量労働時間制」という既存制度の対象範囲拡大は、関連法令の改正を伴う客観的に観測可能なステータス変更であるため。",
           "sources": "https://go2senkyo.com/seijika/183086",
-          "quote_text": "個人の選択肢が広がる裁量労働時間制の適用を拡大する"
+          "quote_text": "個人の選択肢が広がる裁量労働時間制の適用を拡大する",
+          "policy_id": "policy_060"
         },
         {
           "title": "中小企業における経営者の個人保証の廃止",
           "reason": "「個人保証の廃止」という制度上の具体的なステータス変更（廃止）を明示しているため。",
           "sources": "https://go2senkyo.com/seijika/183086",
-          "quote_text": "中小企業における経営者の個人保証を廃止する"
+          "quote_text": "中小企業における経営者の個人保証を廃止する",
+          "policy_id": "policy_061"
         },
         {
           "title": "インターネット投票の開始",
           "reason": "「インターネット投票」という特定の新規制度の設立（開始）を指しており、実施の有無が客観的に判定できるため。",
           "sources": "https://go2senkyo.com/seijika/183086",
-          "quote_text": "インターネット投票の開始する"
+          "quote_text": "インターネット投票の開始する",
+          "policy_id": "policy_062"
         },
         {
           "title": "自衛隊法の改正",
           "reason": "「自衛隊法の改正」という具体的な法改正を明示しており、実行の有無が客観的に確認可能であるため。",
           "sources": "https://go2senkyo.com/seijika/183086",
-          "quote_text": "自衛隊法を改正する"
+          "quote_text": "自衛隊法を改正する",
+          "policy_id": "policy_063"
         },
         {
           "title": "武器輸出の開始",
           "reason": "「武器輸出の開始」という具体的な制度的措置の解禁・開始を指しており、実施されたかが観測可能なため。",
           "sources": "https://go2senkyo.com/seijika/183086",
-          "quote_text": "武器輸出を開始する"
+          "quote_text": "武器輸出を開始する",
+          "policy_id": "policy_064"
         },
         {
           "title": "能動的サイバー防御の法制化",
           "reason": "「法制化」という新たな法整備（新規ルールの設立）を明言しており、その存否で客観的に判定できるため。",
           "sources": "https://go2senkyo.com/seijika/183086",
-          "quote_text": "能動的サイバー防御の法制化"
+          "quote_text": "能動的サイバー防御の法制化",
+          "policy_id": "policy_065"
         }
       ],
       "not-manifesto": [

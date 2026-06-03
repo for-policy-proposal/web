@@ -175,8 +175,8 @@
   {{ $num := printf "%02s" $num_raw }}
   {{ $pdf_path := printf "/pdf/%s/%s/%s/%s-%s.pdf" $year $type $pref $pref $num }}
 
-  {{ $districtData := index site.Data (split $dot_path ".") }}
-
+  {{ $filename := printf "%s-%s" $pref $num }} 
+  {{ $districtData := index site.Data $year $type $pref $filename }}
   {{ if $districtData }}
     {{ $candidate := index $districtData.candidates 0 }}
 
@@ -277,3 +277,4 @@
     <p>データが見つかりません。パスを確認してください: data/{{ replace $dot_path "." "/" }}.json</p>
   {{ end }}
 </div>
+

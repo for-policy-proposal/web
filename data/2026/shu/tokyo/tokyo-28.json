@@ -1,0 +1,105 @@
+{
+  "district": "東京28区",
+  "district_code": "2026-shu-tokyo-28",
+  "candidates": [
+    {
+      "name": "安藤高夫",
+      "party": "自由民主党",
+      "bulletin": {
+        "full_text_blocks": [
+          {
+            "header": "命を守る医師の視点",
+            "body": "街づくり・人づくり・幸せづくり"
+          },
+          {
+            "header": "・高市政権が目指す物価高対策を継続し、賃上げ環境と中小事業者の経営安定を実現。",
+            "body": "・地元産業が活躍する地産地消型経済で練馬の活力を高めます。<br>・高齢化に備え、命と健康を守るため、救急・在宅医療を強化し、感染症や災害に強い体制を整備。医療的ケア児支援も実現します。<br>・医療・介護・福祉の現場を守るべく、人材不足と物価高に対応し、報酬改善と処遇改善を推進。<br>・働く人と子育て世代が安心できる練馬を豊かにするため、非正規の処遇改善、長時間労働の是正、ハラスメント対策を徹底。病児保育拡充や空き家活用住宅など、切れ目ない子育て支援を進めます。<br>・練馬の都市農業をさらに推進し、都営大江戸線の延伸、西武池袋線・新宿線の高架化を着実にすすめます。<br>・外交・安全保障、日米同盟を基軸に命を守るべく、日米同盟を基軸に現実的な安全保障を推進。<br>・首都直下地震に備え、密集地域対策や無電柱化、防災強化で被害を最小限に抑えます。"
+          }
+        ],
+        "manifesto": []
+      },
+      "web": {
+        "manifesto": [
+          {
+            "title": "食料品消費税の2年間0%化",
+            "reason": "税率を0%、期間を2年間とする具体的な数値変更を伴う制度変更であり、実施の有無が客観的に判定可能なため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "食料品消費税を２年間ゼロを実現する。",
+            "policy_id": "policy_113"
+          },
+          {
+            "title": "消費税の5%への減税",
+            "reason": "税率を5%にするという具体的なパラメーターの変更を伴う法改正の実施と結果が確認できるため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "緊急に5％に減税と",
+            "policy_id": "policy_028"
+          },
+          {
+            "title": "インボイス制度の廃止",
+            "reason": "特定の制度（インボイス）の「廃止」という明確なステータス変更を含む断定的な意思表明であるため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "インボイスの廃止。",
+            "policy_id": "policy_029"
+          },
+          {
+            "title": "大企業の内部留保への新規課税",
+            "reason": "新たな課税対象の設定という明確な制度的ステータス変更を指しており、税制改正の有無で検証可能なため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "大企業の内部留保に課税した財源で",
+            "policy_id": "policy_070"
+          },
+          {
+            "title": "最低賃金の1500円以上への引き上げ",
+            "reason": "最低賃金1500円という具体的な数値が含まれており、制度上の条件変更の実施が客観的に確認可能なため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "最低賃金を直ちに１５００円以上に。",
+            "policy_id": "policy_071"
+          },
+          {
+            "title": "大学の学費の半額減免",
+            "reason": "「半額に」という条件・数値の具体的な変更であり、制度化の有無による検証が可能なため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "直ちに半額に",
+            "policy_id": "policy_031"
+          },
+          {
+            "title": "大学の入学金の廃止",
+            "reason": "特定の制度（入学金）の「廃止」というステータス変更を伴う断定的なアクションであるため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "②入学金の廃止",
+            "policy_id": "policy_032"
+          },
+          {
+            "title": "返済中の奨学金の半額免除",
+            "reason": "「半額に」という対象変数の変更を含む明確な制度変更であり、実施が客観的に確認できるため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "返済中の人は半額に。",
+            "policy_id": "policy_033"
+          },
+          {
+            "title": "小中学校生の修学旅行・制服・学用品の無償化",
+            "reason": "「無償化」という具体的な費用負担免除（制度変更）を含み、実施可否が客観的に検証できるため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "小中学校生の④修学旅行・制服・学用品の無償化",
+            "policy_id": "policy_116"
+          },
+          {
+            "title": "公共料金の子供料金対象年齢を18歳まで拡大",
+            "reason": "「18歳まで」という明確な変数・制度条件の変更を示しているため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "⑤公共料金の子供料金を１８歳まで拡大",
+            "policy_id": "policy_035"
+          },
+          {
+            "title": "外国人の受け入れ人数への上限設定",
+            "reason": "受入人数に対する「上限の設定」という明確で観測可能な条件付与であり、法的・制度的アクションを伴うため。",
+            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51314",
+            "quote_text": "外国人の受け入れ人数は上限を決め",
+            "policy_id": "policy_117"
+          }
+        ],
+        "not_manifesto": []
+      }
+    }
+  ]
+}

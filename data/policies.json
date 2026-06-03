@@ -3,103 +3,828 @@
     "title": "日本人の子供たちを対象とする留学支援制度の創設",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
-
+    "evidence": ""
   },
   "policy_002": {
     "title": "対日外国投資委員会（日本版CFIUS）の創設",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_003": {
     "title": "食品消費税のゼロ化",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_004": {
     "title": "給付付き税額控除の導入",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_005": {
     "title": "官邸に人権問題担当官ポストの新設",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_006": {
     "title": "自衛隊法を改正し、在外邦人保護のための自衛隊機出動を迅速化",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_007": {
     "title": "国家安全保障会議（NSC）4大臣会合を5大臣会合へ改組",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_008": {
     "title": "歴史問題担当の補佐官を設置",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_009": {
     "title": "住宅ローン減税の床面積要件の緩和",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_010": {
     "title": "土地等の実質的支配者情報の把握と公開",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_011": {
     "title": "日本版DBSの導入",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_012": {
     "title": "デジタルリテラシー教育の早期必修化",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_013": {
     "title": "投機目的の不動産取得制限",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_014": {
     "title": "燃料油価格の定額引下げ",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_015": {
     "title": "憲法への「自衛隊」明記",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_016": {
     "title": "自衛隊員の給与水準引き上げ",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
   },
   "policy_017": {
     "title": "AI・データサイエンス教育の早期必修化",
     "status": "未確認",
     "last_updated": "2026-05-05",
-    "evidence": "" 
+    "evidence": ""
+  },
+  "policy_018": {
+    "title": "税・社会保険料未納情報の共有および在留審査への活用",
+    "status": "未確認"
+  },
+  "policy_019": {
+    "title": "国土全域での土地実質的支配者情報の把握と公開",
+    "status": "未確認"
+  },
+  "policy_020": {
+    "title": "所得税減税",
+    "status": "未確認"
+  },
+  "policy_021": {
+    "title": "低所得者給付",
+    "status": "未確認"
+  },
+  "policy_022": {
+    "title": "価格転嫁ガイドラインの法的拘束力強化",
+    "status": "未確認"
+  },
+  "policy_023": {
+    "title": "自衛隊員の給与水準および居住環境の改善",
+    "status": "未確認"
+  },
+  "policy_024": {
+    "title": "日本人の子供たち全員を対象とする留学支援制度の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_025": {
+    "title": "国家情報局の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_026": {
+    "title": "帰化要件の厳格化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_027": {
+    "title": "消費税の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_028": {
+    "title": "消費税を5％へ減税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_029": {
+    "title": "インボイス制度の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_030": {
+    "title": "最低賃金の引き上げ（時給1700円）",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_031": {
+    "title": "学費の半額化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_032": {
+    "title": "入学金の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_033": {
+    "title": "返済中の奨学金の半額免除",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_034": {
+    "title": "修学旅行・制服・学用品の無償化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_035": {
+    "title": "公共交通の子ども料金の適用年齢拡大（18歳まで）",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_036": {
+    "title": "ガソリン補助金の継続",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_037": {
+    "title": "子育て世帯への給付",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_038": {
+    "title": "暗号資産に関連する税制改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_039": {
+    "title": "憲法改正の実施",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_040": {
+    "title": "児童手当の所得制限撤廃",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_041": {
+    "title": "児童手当の支給対象の高校生までの拡大",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_042": {
+    "title": "児童手当における第3子以降の加算増額",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_043": {
+    "title": "子ども支援の所得制限撤廃",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_044": {
+    "title": "「防衛三文書」の改定",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_045": {
+    "title": "スパイ防止法の制定",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_046": {
+    "title": "所得税および住民税の減税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_047": {
+    "title": "ガソリン税などの暫定税率廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_048": {
+    "title": "原子力の再稼働",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_049": {
+    "title": "国会議員の定数削減法案の提出",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_050": {
+    "title": "憲法への自衛隊明記と憲法改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_051": {
+    "title": "仕入税額控除が可能な0％税率の導入",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_052": {
+    "title": "憲法への合区解消（各都道府県から必ず1人は参議院議員を選出）の明記",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_053": {
+    "title": "憲法への緊急事態条項の新設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_054": {
+    "title": "憲法への「自衛隊の保持」明記",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_055": {
+    "title": "憲法への「教育の充実に向けた環境整備を行う旨」の明記",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_056": {
+    "title": "憲法9条改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_057": {
+    "title": "選択的夫婦別姓",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_058": {
+    "title": "防衛費GDP比2%",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_059": {
+    "title": "憲法9条の改正と自衛隊の明記",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_060": {
+    "title": "裁量労働時間制の適用拡大",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_061": {
+    "title": "中小企業における経営者の個人保証の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_062": {
+    "title": "インターネット投票の開始",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_063": {
+    "title": "自衛隊法の改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_064": {
+    "title": "武器輸出の開始",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_065": {
+    "title": "能動的サイバー防御の法制化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_066": {
+    "title": "子育て・教育・障害福祉の所得制限を撤廃",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_067": {
+    "title": "年少扶養控除を復活",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_068": {
+    "title": "消費税の廃止または5％への減税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_069": {
+    "title": "一律の現金給付",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_070": {
+    "title": "大企業の内部留保への課税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_071": {
+    "title": "最低賃金をただちに1500円以上に引き上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_072": {
+    "title": "学費の半額化および入学金の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_073": {
+    "title": "帰化の居住要件の10年以上への引き上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_074": {
+    "title": "在留外国人向けの学習プログラム創設と永住条件等の厳格化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_075": {
+    "title": "外国ルーツの子ども向けプレスクールの国による設置",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_076": {
+    "title": "不動産登記への国籍記入の義務付け",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_077": {
+    "title": "在留資格や帰化の条件への日本語能力試験結果の追加",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_078": {
+    "title": "旧姓使用の法制化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_079": {
+    "title": "3人以上多子世帯の教育関連費用の完全無償化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_080": {
+    "title": "困窮家庭やこども食堂へのコメ券・牛乳券の配布",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_081": {
+    "title": "失業や所得減少時の児童扶養手当の特例受給制度の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_082": {
+    "title": "空襲被害者への見舞金支給に関する議員立法の制定",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_083": {
+    "title": "被災地ボランティア向けの有給休暇制度の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_084": {
+    "title": "紙の約束手形の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_085": {
+    "title": "看護師・介護福祉士・保育士・幼稚園教諭の公的価格引上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_086": {
+    "title": "「メディア芸術ナショナルセンター」の設置",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_087": {
+    "title": "通院付き添いへの介護休暇の適用拡大",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_088": {
+    "title": "入院3ヶ月制限の仕組みの改定",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_089": {
+    "title": "食品と消費税の減税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_090": {
+    "title": "収入に応じた負担割合となる制度への変更",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_091": {
+    "title": "外国人定住者や永住権の付与基準緩和および関連法の整備",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_092": {
+    "title": "憲法への「環境権」および「プライバシー権」の新設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_093": {
+    "title": "公営塾等支援に向けた予算の確保",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_094": {
+    "title": "給特法の改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_095": {
+    "title": "所得税基礎控除の引上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_096": {
+    "title": "社会保険料引下げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_097": {
+    "title": "公金受取口座を活用した生活支援デジタル給付の制度化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_098": {
+    "title": "物価上昇に応じた所得税基礎控除の引上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_099": {
+    "title": "生活支援デジタル給付の制度化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_100": {
+    "title": "消費税の0%化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_101": {
+    "title": "企業献金の禁止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_102": {
+    "title": "国・自治体会計の発生主義への移行および連結財務諸表の整備",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_103": {
+    "title": "国民投票の実施および日本国憲法の改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_104": {
+    "title": "行政データベースの統合",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_105": {
+    "title": "政治資金に関する第三者機関の立ち上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_106": {
+    "title": "憲法改正の国民投票の実施",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_107": {
+    "title": "ジャパン・ファンドの創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_108": {
+    "title": "防災庁の設置",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_109": {
+    "title": "皇室典範の改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_110": {
+    "title": "20兆円のGX移行債の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_111": {
+    "title": "「再エネ特措法」および「温対法」の改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_112": {
+    "title": "「宇宙庁」の設立",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_113": {
+    "title": "食料品の消費税ゼロ（2年間）",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_114": {
+    "title": "複数年度予算への移行",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_115": {
+    "title": "規制クリア原発の再稼働",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_116": {
+    "title": "小中学校生の修学旅行・制服・学用品の無償化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_117": {
+    "title": "外国人の受け入れ人数への上限設定",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_118": {
+    "title": "年収の壁の引き上げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_119": {
+    "title": "高校の授業料無償化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_120": {
+    "title": "小学校給食の無償化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_121": {
+    "title": "政府全体で1兆円規模の中小事業者支援",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_122": {
+    "title": "収支報告書に不記載の資金の国庫返納義務化",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_123": {
+    "title": "「年収の壁」見直しに伴う所得減税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_124": {
+    "title": "子育て応援手当の支給",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_125": {
+    "title": "対外情報機関の設置",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_126": {
+    "title": "「防衛三文書」の前倒し改定",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_127": {
+    "title": "最低賃金の業種毎の法改正",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_128": {
+    "title": "家賃減税の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_129": {
+    "title": "海外投資家の投資目的での不動産取得規制",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_130": {
+    "title": "日本の情報機関の集約",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_131": {
+    "title": "供託金の引き下げ",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_132": {
+    "title": "日本版ネウボラの導入",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_133": {
+    "title": "憲法改正案の発議",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_134": {
+    "title": "こども誰でも通園制度の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_135": {
+    "title": "贈与税減税",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_136": {
+    "title": "医療・介護職の報酬増",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_137": {
+    "title": "「子育てケアマネ」の創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_138": {
+    "title": "強制送還の対象罪拡大",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_139": {
+    "title": "公営住宅入居者の国籍把握",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_140": {
+    "title": "日本の文化やルールを学ぶプログラムの創設",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
   }
 }

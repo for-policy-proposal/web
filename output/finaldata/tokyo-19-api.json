@@ -9,49 +9,57 @@
           "title": "公営塾等支援に向けた予算の確保",
           "reason": "「公営塾等を支援する予算を確保する」という断定的なコミットメントであり、予算書への計上という形で客観的に実施状況が検証できるため。",
           "sources": "https://go2senkyo.com/seijika/121937/posts/1287632",
-          "quote_text": "公営塾等を支援する予算を確保する"
+          "quote_text": "公営塾等を支援する予算を確保する",
+          "policy_id": "policy_093"
         },
         {
           "title": "給特法の改正",
           "reason": "「給特法」という特定の法律を改正するという、検証可能かつ断定的な制度のステータス変更の意思表明であるため。",
           "sources": "https://hit-press.org/projects/4482",
-          "quote_text": "給特法の改正やその他の法律改正を通じた待遇改善"
+          "quote_text": "給特法の改正やその他の法律改正を通じた待遇改善",
+          "policy_id": "policy_094"
         },
         {
           "title": "物価高対策としての国民への現金給付",
           "reason": "「国民1人当たり2万円」「4万円を支給する」と具体的な給付金額が明示されており、実施されたかどうかが客観的に判定できるため。",
           "sources": "https://say-g.com/matsumoto-yohei-11078",
-          "quote_text": "物価高対策として、国民1人当たり2万円、子供や住民税非課税世帯の大人には1人2万円上乗せして4万円を支給する"
+          "quote_text": "物価高対策として、国民1人当たり2万円、子供や住民税非課税世帯の大人には1人2万円上乗せして4万円を支給する",
+          "policy_id": "policy_069"
         },
         {
           "title": "消費税を5%に減税",
           "reason": "消費税の税率を「5%」という具体的な数値に変更することを明言しており、法改正によって実施の有無が客観的に検証可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51303",
-          "quote_text": "消費税を緊急に５％に減税"
+          "quote_text": "消費税を緊急に５％に減税",
+          "policy_id": "policy_028"
         },
         {
           "title": "インボイス制度の廃止",
           "reason": "「インボイス制度」という特定の制度に対する「廃止」というステータス変更を断定的にコミットしているため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51303",
-          "quote_text": "インボイスを廃止する"
+          "quote_text": "インボイスを廃止する",
+          "policy_id": "policy_029"
         },
         {
           "title": "大学の学費半額化",
           "reason": "大学の学費に対し「半額」という具体的な数値要件の変更を断定しており、実行の有無が事後検証可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51303",
-          "quote_text": "直ちに半額にして"
+          "quote_text": "直ちに半額にして",
+          "policy_id": "policy_031"
         },
         {
           "title": "入学金の廃止",
           "reason": "「入学金の廃止」という具体的なステータス変更を断定しており、実行の有無が検証可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51303",
-          "quote_text": "入学金を廃止する"
+          "quote_text": "入学金を廃止する",
+          "policy_id": "policy_032"
         },
         {
           "title": "奨学金返済の半額免除",
           "reason": "「半額免除」という具体的な数値を用いた制度の変更を断定しているため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51303",
-          "quote_text": "返済中の人は半額免除"
+          "quote_text": "返済中の人は半額免除",
+          "policy_id": "policy_033"
         }
       ],
       "not-manifesto": [

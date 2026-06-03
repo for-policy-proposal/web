@@ -9,13 +9,15 @@
           "title": "ガソリン暫定税率の廃止",
           "reason": "「ガソリン暫定税率」という特定の税制の「廃止」という具体的なステータス変更を指しており、法改正の有無によって客観的に実行可否が判断できるため。",
           "sources": "https://go2senkyo.com/seijika/121942",
-          "quote_text": "ガソリン暫定税率の廃止"
+          "quote_text": "ガソリン暫定税率の廃止",
+          "policy_id": "policy_047"
         },
         {
           "title": "年収の壁の引き上げ",
           "reason": "「年収の壁」という税・社会保険上の基準額（変数）の引き上げを明示しており、制度変更・法改正等によって実施されたかが客観的に検証可能であるため。",
           "sources": "https://go2senkyo.com/seijika/121942",
-          "quote_text": "年収の壁の引き上げ"
+          "quote_text": "年収の壁の引き上げ",
+          "policy_id": "policy_118"
         }
       ],
       "not-manifesto": [

@@ -9,85 +9,99 @@
           "title": "消費税の廃止",
           "reason": "「廃止」という制度のステータス変更を断定的にコミットしており、法改正や税率変更で客観的に判定できるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "消費税の廃止を行う"
+          "quote_text": "消費税の廃止を行う",
+          "policy_id": "policy_027"
         },
         {
           "title": "消費税を5％へ減税",
           "reason": "「5%に減税」という具体的な数値の変更を明示しており、実施の有無が客観的に判定できるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "消費税を緊急に5％へ減税し"
+          "quote_text": "消費税を緊急に5％へ減税し",
+          "policy_id": "policy_028"
         },
         {
           "title": "インボイス制度の廃止",
           "reason": "「廃止」という具体的な制度のステータス変更を指しており、法改正の有無によって検証が可能であるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "インボイス制度を廃止し"
+          "quote_text": "インボイス制度を廃止し",
+          "policy_id": "policy_029"
         },
         {
           "title": "最低賃金の引き上げ（時給1700円）",
           "reason": "「1700円（当面1500円）」という具体的な数値目標を示した断定的なアクションであり、実施の有無が検証可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "最低賃金を時給1700円（当面1500円）へ引き上げ"
+          "quote_text": "最低賃金を時給1700円（当面1500円）へ引き上げ",
+          "policy_id": "policy_030"
         },
         {
           "title": "学費の半額化",
           "reason": "「半額」という明確な数値・ステータス変更を示しており、検証が可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "学費の半額化"
+          "quote_text": "学費の半額化",
+          "policy_id": "policy_031"
         },
         {
           "title": "入学金の廃止",
           "reason": "入学金という特定制度の「廃止」というステータス変更を指しており、客観的に検証可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "入学金の廃止"
+          "quote_text": "入学金の廃止",
+          "policy_id": "policy_032"
         },
         {
           "title": "返済中の奨学金の半額免除",
           "reason": "「半額免除」という具体的な数値・ステータス変更が明示されており、実行されたかどうかが客観的に判断可能であるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "返済中の奨学金の半額免除を行う"
+          "quote_text": "返済中の奨学金の半額免除を行う",
+          "policy_id": "policy_033"
         },
         {
           "title": "修学旅行・制服・学用品の無償化",
           "reason": "「無償化（0円）」という明確な費用のパラメータ変更を明示しており、実施の検証が可能なため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "修学旅行・制服・学用品の無償化"
+          "quote_text": "修学旅行・制服・学用品の無償化",
+          "policy_id": "policy_034"
         },
         {
           "title": "公共交通の子ども料金の適用年齢拡大（18歳まで）",
           "reason": "「18歳まで」という明確な変数の変更を含んでおり、実施されたかどうか客観的に判定できるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51265",
-          "quote_text": "公共交通の子ども料金の18歳までの拡大"
+          "quote_text": "公共交通の子ども料金の18歳までの拡大",
+          "policy_id": "policy_035"
         },
         {
           "title": "所得税の減税",
           "reason": "法改正の有無によって実行されたかが客観的に判断可能であるため。",
           "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
-          "quote_text": "所得税減税"
+          "quote_text": "所得税減税",
+          "policy_id": "policy_020"
         },
         {
           "title": "ガソリン補助金の継続",
           "reason": "ガソリン補助金は廃止が予見される時限措置であるため、その継続（延長）という予算上のステータス変更を実施の有無で明確に判定できるため。",
           "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
-          "quote_text": "ガソリン補助金の継続"
+          "quote_text": "ガソリン補助金の継続",
+          "policy_id": "policy_036"
         },
         {
           "title": "低所得世帯への現金給付",
           "reason": "「現金給付の実施」は予算措置の有無によって実行されたかを数字と制度で客観的に100%判断可能であるため。",
           "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
-          "quote_text": "低所得世帯への現金給付"
+          "quote_text": "低所得世帯への現金給付",
+          "policy_id": "policy_021"
         },
         {
           "title": "子育て世帯への給付",
           "reason": "「給付の実施」は予算措置や事務連絡の有無によって実行されたかを客観的に判断可能であるため。",
           "sources": "https://note.com/sakanaya_ikuta/n/na15cbda564ec",
-          "quote_text": "子育て世帯への給付を実施"
+          "quote_text": "子育て世帯への給付を実施",
+          "policy_id": "policy_037"
         },
         {
           "title": "暗号資産に関連する税制改正",
           "reason": "「税制改正」という法令の変更を伴う具体的な政治アクションを明示しており、法案成立など客観的な条文の有無で達成度が検証可能であるため。",
           "sources": "https://expact.jp/taira-masaaki/",
-          "quote_text": "暗号資産に関連する税制改正"
+          "quote_text": "暗号資産に関連する税制改正",
+          "policy_id": "policy_038"
         }
       ],
       "not-manifesto": [

@@ -9,13 +9,15 @@
           "title": "食品消費税のゼロ化",
           "reason": "「食品消費税ゼロ」という特定の税率に対する具体的な数値の変更を明示しており、実施の有無が客観的に検証可能であるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51275",
-          "quote_text": "この秋から食品消費税ゼロ"
+          "quote_text": "この秋から食品消費税ゼロ",
+          "policy_id": "policy_003"
         },
         {
           "title": "所得税および住民税の減税",
           "reason": "所得税および住民税という特定の税に対する「減税」という具体的な制度上のパラメータ変更を指しており、法改正の有無によって客観的に実施が判定できるため。",
           "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51275",
-          "quote_text": "所得税住民税の減税で手取りを増やす"
+          "quote_text": "所得税住民税の減税で手取りを増やす",
+          "policy_id": "policy_046"
         }
       ],
       "not-manifesto": [
