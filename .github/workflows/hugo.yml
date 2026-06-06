@@ -63,7 +63,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Node.js dependencies
-        run: npm ci
+        run: npm install --no-optional
 
       - name: Rebuild native modules (fallback)
         run: |
