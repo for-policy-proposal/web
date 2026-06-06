@@ -1,6 +1,8 @@
 name: Regenerate package-lock on Linux
 on:
-  workflow_dispatch:
+    push:
+        branches: main
+ 
 
 jobs:
   regen:
