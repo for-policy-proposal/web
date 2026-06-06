@@ -64,6 +64,41 @@
             "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51275",
             "quote_text": "所得税住民税の減税で手取りを増やす",
             "policy_id": "policy_046"
+          },
+          {
+            "title": "パート・アルバイト・派遣社員の最低賃金を1500円にする",
+            "reason": "最低賃金の引き上げは、法改正の有無によって客観的に実施が判定できるため。",
+            "sources": "https://isshu.online/promise.html",
+            "quote_text": "パート・アルバイト・派遣社員の最低賃金を1500円にし、年収の壁の引き上げを！",
+            "policy_id": "policy_071"
+          },
+          {
+            "title": "年収の壁の引き上げ",
+            "reason": "所得税の減税であり、法改正の有無によって客観的に実施が判定できるため。",
+            "sources": "https://isshu.online/promise.html",
+            "quote_text": "パート・アルバイト・派遣社員の最低賃金を1500円にし、年収の壁の引き上げを！",
+            "policy_id": "policy_118"
+          },
+          {
+            "title": "電気代の補助金を継続",
+            "reason": "電気・ガス料金負担軽減支援事業の継続の有無によって客観的に実施が判定できるため。",
+            "sources": "https://isshu.online/promise.html",
+            "quote_text": "電気代の補助金を継続させ、",
+            "policy_id": "policy_142"
+          },
+          {
+            "title": "マクロ経済スライドの廃止",
+            "reason": "年金に関連する法律の改正が行われたか否かによって、判断が可能なため。",
+            "sources": "https://isshu.online/promise.html",
+            "quote_text": "年金のマクロ経済スライドの廃止へ！",
+            "policy_id": "policy_143"
+          },
+          {
+            "title": "定年制を廃止",
+            "reason": "高年齢者雇用安定法などの改正により定年制が禁止されたか否かが判断できるため",
+            "sources": "https://isshu.online/promise.html",
+            "quote_text": "定年制や役職定年を廃止し、",
+            "policy_id": "policy_144"
           }
         ],
         "not_manifesto": []

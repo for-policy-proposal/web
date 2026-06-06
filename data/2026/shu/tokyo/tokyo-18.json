@@ -24,13 +24,7 @@
       },
       "web": {
         "manifesto": [
-          {
-            "title": "食料品の消費税率0%の実現",
-            "reason": "「消費税率0%」という具体的な数値目標と「実現」という断定的なコミットメントがあり、実施の有無が客観的に検証可能であるため。",
-            "sources": "https://shugiin.go2senkyo.com/51/senkyoku/51300",
-            "quote_text": "食料品の消費税率０％を今秋に実現",
-            "policy_id": "policy_003"
-          }
+ 
         ],
         "not_manifesto": []
       }

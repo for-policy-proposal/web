@@ -826,5 +826,47 @@
     "status": "未確認",
     "last_updated": "2026-05-05",
     "evidence": ""
+  },
+  "policy_141": {
+    "title": "在職老齢年金制度の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_142": {
+    "title": "電気代補助の継続",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_143": {
+    "title": "マクロ経済スライドの廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_144": {
+    "title": "定年制の廃止",
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
+  },
+  "policy_145": {
+    "title": "AI導入一括補助金の創設",
+    "status": "未確認",
+    "last_updated": "2026-06-06",
+    "evidence": ""
+  },
+  "policy_146": {
+    "title": "末子が成人するまで継続する長期住宅ローン減税の導入",
+    "status": "未確認",
+    "last_updated": "2026-06-06",
+    "evidence": ""
+  },
+  "policy_147": {
+    "title": "ベビーシッター・家事代行サービス利用代金の減税対象化",
+    "status": "未確認",
+    "last_updated": "2026-06-06",
+    "evidence": ""
   }
 }

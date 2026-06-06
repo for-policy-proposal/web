@@ -97,6 +97,13 @@
             "sources": "https://go2senkyo.com/seijika/192403",
             "quote_text": "日本版CFIUSの設置",
             "policy_id": "policy_002"
+          },
+          {
+            "title": "在職老齢年金制度の廃止",
+            "reason": "制度の廃止は法改正の有無によって客観的に実施が判定できるため。",
+            "sources": "https://kado-hiroko.jp/#oyakusoku",
+            "quote_text": "高齢者が一定以上働くと年金が減ってしまう「在職老齢年金制度」を廃止します",
+            "policy_id": "policy_141"
           }
         ],
         "not_manifesto": []

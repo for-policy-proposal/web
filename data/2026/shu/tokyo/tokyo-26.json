@@ -42,7 +42,36 @@
         ]
       },
       "web": {
-        "manifesto": [],
+        "manifesto": [
+          {
+            "title": "AI導入一括補助金の創設",
+            "reason": "「AI導入一括補助金」という新規制度の設立を明言しており、その存否が客観的に確認可能なため。",
+            "sources": "https://imaoka-ueki.com/#policy",
+            "quote_text": "AI導入一括補助金を創設。",
+            "policy_id": "policy_145"
+          },
+          {
+            "title": "飲食料品への消費税ゼロ税率適用",
+            "reason": "「飲食料品へのゼロ税率適用」という、消費税率という具体的なパラメータの変更を明示しているため。",
+            "sources": "https://imaoka-ueki.com/#policy",
+            "quote_text": "飲食料品へのゼロ税率適用（飲食料品の消費税ゼロ税率）",
+            "policy_id": "policy_003"
+          },
+          {
+            "title": "末子が成人するまで継続する長期住宅ローン減税の導入",
+            "reason": "「長期住宅ローン減税」という新規制度の導入、および「末子が成人するまで」という条件が明確なため。",
+            "sources": "https://imaoka-ueki.com/#policy",
+            "quote_text": "末子が成人するまで継続する「長期住宅ローン減税」を導入。",
+            "policy_id": "policy_146"
+          },
+          {
+            "title": "ベビーシッター・家事代行サービス利用代金の減税対象化",
+            "reason": "特定のサービス利用料金を「減税の対象とする」という、税制上のステータス変更を明示しているため。",
+            "sources": "https://imaoka-ueki.com/#policy",
+            "quote_text": "ベビーシッターや家事代行サービスの利用代金について減税の対象とし",
+            "policy_id": "policy_147"
+          }
+        ],
         "not_manifesto": []
       }
     }
