@@ -49,6 +49,37 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+
+
+
+
+
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+          cache: 'npm'
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Rebuild native modules (fallback)
+        run: |
+          # Rebuild watcher/native modules if necessary (won't fail the job)
+          npm rebuild @parcel/watcher || true
+
+
+
+
+
+
+          
+
+
+
+
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
