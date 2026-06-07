@@ -1,6 +1,7 @@
 ---
 title: "山形"
 url: "/2026/shu/prefectures/yamagata/"
+layout: "district"
 ---
 
 # 山形 選挙区

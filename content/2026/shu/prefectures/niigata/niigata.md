@@ -1,6 +1,7 @@
 ---
 title: "新潟"
 url: "/2026/shu/prefectures/niigata/"
+layout: "district"
 ---
 
 # 新潟 選挙区

@@ -1,6 +1,7 @@
 ---
 title: "京都"
 url: "/2026/shu/prefectures/kyoto/"
+layout: "district"
 ---
 
 # 京都 選挙区

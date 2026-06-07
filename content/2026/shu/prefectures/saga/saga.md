@@ -1,6 +1,7 @@
 ---
 title: "佐賀"
 url: "/2026/shu/prefectures/saga/"
+layout: "district"
 ---
 
 # 佐賀 選挙区

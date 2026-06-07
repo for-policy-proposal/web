@@ -1,6 +1,7 @@
 ---
 title: "岡山"
 url: "/2026/shu/prefectures/okayama/"
+layout: "district"
 ---
 
 # 岡山 選挙区

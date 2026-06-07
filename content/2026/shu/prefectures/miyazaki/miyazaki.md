@@ -1,6 +1,7 @@
 ---
 title: "宮崎"
 url: "/2026/shu/prefectures/miyazaki/"
+layout: "district"
 ---
 
 # 宮崎 選挙区

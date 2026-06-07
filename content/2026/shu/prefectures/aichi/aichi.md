@@ -1,6 +1,7 @@
 ---
 title: "愛知"
 url: "/2026/shu/prefectures/aichi/"
+layout: "district"
 ---
 
 # 愛知 選挙区

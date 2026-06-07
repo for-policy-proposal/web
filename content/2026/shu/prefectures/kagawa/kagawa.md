@@ -1,6 +1,7 @@
 ---
 title: "香川"
 url: "/2026/shu/prefectures/kagawa/"
+layout: "district"
 ---
 
 # 香川 選挙区

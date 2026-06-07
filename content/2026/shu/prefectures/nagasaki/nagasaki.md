@@ -1,6 +1,7 @@
 ---
 title: "長崎"
 url: "/2026/shu/prefectures/nagasaki/"
+layout: "district"
 ---
 
 # 長崎 選挙区

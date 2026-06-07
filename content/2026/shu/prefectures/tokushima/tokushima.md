@@ -1,6 +1,7 @@
 ---
 title: "徳島"
 url: "/2026/shu/prefectures/tokushima/"
+layout: "district"
 ---
 
 # 徳島 選挙区

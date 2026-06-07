@@ -1,6 +1,7 @@
 ---
 title: "滋賀"
 url: "/2026/shu/prefectures/shiga/"
+layout: "district"
 ---
 
 # 滋賀 選挙区

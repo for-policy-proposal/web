@@ -1,6 +1,7 @@
 ---
 title: "秋田"
 url: "/2026/shu/prefectures/akita/"
+layout: "district"
 ---
 
 # 秋田 選挙区

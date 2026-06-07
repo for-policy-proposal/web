@@ -1,6 +1,7 @@
 ---
 title: "石川"
 url: "/2026/shu/prefectures/ishikawa/"
+layout: "district"
 ---
 
 # 石川 選挙区

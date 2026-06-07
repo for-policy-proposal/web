@@ -1,6 +1,7 @@
 ---
 title: "福岡"
 url: "/2026/shu/prefectures/fukuoka/"
+layout: "district"
 ---
 
 # 福岡 選挙区

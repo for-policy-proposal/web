@@ -1,6 +1,7 @@
 ---
 title: "埼玉"
 url: "/2026/shu/prefectures/saitama/"
+layout: "district"
 ---
 
 # 埼玉 選挙区

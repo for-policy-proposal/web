@@ -1,6 +1,7 @@
 ---
 title: "山口"
 url: "/2026/shu/prefectures/yamaguchi/"
+layout: "district"
 ---
 
 # 山口 選挙区

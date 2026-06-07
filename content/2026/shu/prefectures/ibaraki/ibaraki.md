@@ -1,6 +1,7 @@
 ---
 title: "茨城"
 url: "/2026/shu/prefectures/ibaraki/"
+layout: "district"
 ---
 
 # 茨城 選挙区

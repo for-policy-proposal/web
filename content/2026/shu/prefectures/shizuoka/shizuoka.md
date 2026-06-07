@@ -1,6 +1,7 @@
 ---
 title: "静岡"
 url: "/2026/shu/prefectures/shizuoka/"
+layout: "district"
 ---
 
 # 静岡 選挙区

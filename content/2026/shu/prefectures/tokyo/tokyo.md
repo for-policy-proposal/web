@@ -1,6 +1,7 @@
 ---
 title: "東京"
 url: "/2026/shu/prefectures/tokyo/"
+layout: "district"
 ---
 
 # 東京 選挙区

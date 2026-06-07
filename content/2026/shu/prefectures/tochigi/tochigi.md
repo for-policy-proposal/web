@@ -1,6 +1,7 @@
 ---
 title: "栃木"
 url: "/2026/shu/prefectures/tochigi/"
+layout: "district"
 ---
 
 # 栃木 選挙区

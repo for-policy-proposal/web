@@ -182,32 +182,54 @@
 
     <header class="candidate-header">
       <div class="candidate-party">{{ $candidate.party }}</div>
-      <h1 class="candidate-name">{{ $candidate.name }} の公約検証</h1>
+      <h1 class="candidate-name">{{ $candidate.name }} 議員</h1>
     </header>
 
     <section>
-      <h2><i class="fas fa-file-contract"></i> 選挙公報からの公約抽出</h2>
+      <h2><i class="fas fa-file-contract"></i> 選挙公報からの公約</h2>
       {{ if and (isset $candidate.bulletin "manifesto") (gt (len $candidate.bulletin.manifesto) 0) }}
         {{ range $candidate.bulletin.manifesto }}
           {{ $master := index $.Site.Data.policies .policy_id }}
-          <div class="pledge-card">
+          <div class="card bg-base-100 border border-base-300 rounded-box p-6 mb-6">
             
-            {{ if $master.evidence }}
-              <a href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
-                <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}" style="cursor: pointer;">
-                  {{ $master.status | default "未確認" }} <i class="fas fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
-                </span>
-              </a>
-            {{ else }}
-              <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
+
+
+            
+
+          {{ $has_evidence := and (isset $master "evidence") (ne $master.evidence "") }}
+          {{ $status_class := "" }}
+          {{ if eq $master.status "実施済み" }}{{ $status_class = "badge-soft badge-success" }}
+          {{- else if eq $master.status "未確認" }}{{ $status_class = "badge-soft badge-warning" }}
+          {{- else }}{{ $status_class = "badge-soft badge-error" }}{{ end }}
+
+          <div class="mb-3">
+            <a {{ if $has_evidence }}href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer"{{ end }} 
+              class="inline-flex items-center no-underline {{ if $has_evidence }}tooltip tooltip-top cursor-pointer{{ else }}pointer-events-none{{ end }}"
+              {{ if $has_evidence }}data-tip="根拠を確認"{{ end }}>
+              
+              <span class="badge badge-lg {{ $status_class }} text-sm font-bold px-3 py-4">
                 {{ $master.status | default "未確認" }}
               </span>
-            {{ end }}
+
+            </a>
+          </div>
+
+
+
+
 
             <span class="pledge-title">{{ .title }}</span>
-            <div class="quote-box">「{{ .quote_text }}」</div>
-            <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
-            <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
+            <div class="bg-base-200 border-l-3 border-black p-4 rounded-r-box italic mb-4">{{ .quote_text }}</div>
+            <div class="collapse collapse-arrow bg-base-100 border-base-300 border">
+              <input type="checkbox" class="peer" />
+              <div class="collapse-title font-bold text-sm text-base-content">
+                公約と判定した理由
+              </div>
+              <div class="collapse-content text-sm">
+                <p>{{ .reason }}</p>
+              </div>
+            </div>
+            <div class=" text-xs opacity-60 mt-4 mb-0">最終更新: {{ $master.last_updated }}</div>
           </div>
         {{ end }}
       {{ else }}
@@ -225,27 +247,50 @@
       {{ if and (isset $candidate.web "manifesto") (gt (len $candidate.web.manifesto) 0) }}
         {{ range $candidate.web.manifesto }}
           {{ $master := index $.Site.Data.policies .policy_id }}
-          <div class="pledge-card">
+          <div class="card bg-base-100 border border-base-300 rounded-box p-6 mb-6">
             
-            {{ if $master.evidence }}
-              <a href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
-                <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}" style="cursor: pointer;">
-                  {{ $master.status | default "未確認" }} <i class="fas fa-external-link-alt" style="font-size: 0.7rem; margin-left: 3px;"></i>
-                </span>
-              </a>
-            {{ else }}
-              <span class="status-badge {{ if eq $master.status "実施済み" }}status-checked{{ else if eq $master.status "着手中" }}status-doing{{ else }}status-todo{{ end }}">
+
+
+
+
+
+          {{ $has_evidence := and (isset $master "evidence") (ne $master.evidence "") }}
+          {{ $status_class := "" }}
+          {{ if eq $master.status "実施済み" }}{{ $status_class = "badge-soft badge-success" }}
+          {{- else if eq $master.status "未確認" }}{{ $status_class = "badge-soft badge-warning" }}
+          {{- else }}{{ $status_class = "badge-soft badge-error" }}{{ end }}
+
+          <div class="mb-3">
+            <a {{ if $has_evidence }}href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer"{{ end }} 
+              class="inline-flex items-center no-underline {{ if $has_evidence }}tooltip tooltip-top cursor-pointer{{ else }}pointer-events-none{{ end }}"
+              {{ if $has_evidence }}data-tip="根拠を確認"{{ end }}>
+              
+              <span class="badge badge-lg {{ $status_class }} text-sm font-bold px-3 py-4">
                 {{ $master.status | default "未確認" }}
               </span>
-            {{ end }}
+
+            </a>
+          </div>
+
+
+
 
             <span class="pledge-title">{{ .title }}</span>
-            <div class="quote-box">「{{ .quote_text }}」</div>
-            <div class="reason-text"><span class="reason-label"><details><summary>判定理由</summary></span>{{ .reason }}</details></div>
-     
+            <div class="bg-base-200 border-l-3 border-black p-4 rounded-r-box italic mb-4">{{ .quote_text }}</div>
+            <div class="collapse collapse-arrow bg-base-100 border-base-300 border">
+              <input type="checkbox" class="peer" />
+              <div class="collapse-title font-bold text-sm text-base-content">
+                公約と判定した理由
+              </div>
+              <div class="collapse-content text-sm">
+                <p>{{ .reason }}</p>
+              </div>
+            </div>
+
+
 
             <div><a href="{{ .sources }}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></div>
-            <div class="last-updated"><span>{{ $master.last_updated }}</span></div>
+            <div class=" text-xs opacity-60 mt-4 mb-0">最終更新: {{ $master.last_updated }}</div>
           </div>
         {{ end }}
       {{ else }}
@@ -268,10 +313,13 @@
           </div>
         {{ end }}
       </div>
-      <a href="{{ $pdf_path }}" class="btn-pdf" target="_blank">
-        原本PDFを表示
+      <a href="{{ $pdf_path }}" class="btn mt-4 btn-wide mx-auto block text-center flex items-center justify-center" target="_blank">
+        <i class="fas fa-file-pdf"></i> 原本PDFを表示
       </a>
     </section>
+
+
+
 
   {{ else }}
     <p>データが見つかりません。パスを確認してください: data/{{ replace $dot_path "." "/" }}.json</p>

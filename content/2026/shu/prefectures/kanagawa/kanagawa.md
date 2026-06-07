@@ -1,6 +1,7 @@
 ---
 title: "神奈川"
 url: "/2026/shu/prefectures/kanagawa/"
+layout: "district"
 ---
 
 # 神奈川 選挙区

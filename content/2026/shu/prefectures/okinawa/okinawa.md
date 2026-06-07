@@ -1,6 +1,7 @@
 ---
 title: "沖縄"
 url: "/2026/shu/prefectures/okinawa/"
+layout: "district"
 ---
 
 # 沖縄 選挙区

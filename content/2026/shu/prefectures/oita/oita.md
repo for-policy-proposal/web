@@ -1,6 +1,7 @@
 ---
 title: "大分"
 url: "/2026/shu/prefectures/oita/"
+layout: "district"
 ---
 
 # 大分 選挙区

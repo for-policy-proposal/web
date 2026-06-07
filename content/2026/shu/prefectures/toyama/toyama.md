@@ -1,6 +1,7 @@
 ---
 title: "富山"
 url: "/2026/shu/prefectures/toyama/"
+layout: "district"
 ---
 
 # 富山 選挙区

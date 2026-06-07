@@ -1,6 +1,7 @@
 ---
 title: "宮城"
 url: "/2026/shu/prefectures/miyagi/"
+layout: "district"
 ---
 
 # 宮城 選挙区

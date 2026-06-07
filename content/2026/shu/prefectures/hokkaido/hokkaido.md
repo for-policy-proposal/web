@@ -1,6 +1,7 @@
 ---
 title: "北海道"
 url: "/2026/shu/prefectures/hokkaido/"
+layout: "district"
 ---
 
 # 北海道 選挙区

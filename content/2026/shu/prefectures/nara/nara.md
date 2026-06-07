@@ -1,6 +1,7 @@
 ---
 title: "奈良"
 url: "/2026/shu/prefectures/nara/"
+layout: "district"
 ---
 
 # 奈良 選挙区

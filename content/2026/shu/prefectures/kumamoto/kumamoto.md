@@ -1,6 +1,7 @@
 ---
 title: "熊本"
 url: "/2026/shu/prefectures/kumamoto/"
+layout: "district"
 ---
 
 # 熊本 選挙区

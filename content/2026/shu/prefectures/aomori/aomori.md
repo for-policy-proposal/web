@@ -1,6 +1,7 @@
 ---
 title: "青森"
 url: "/2026/shu/prefectures/aomori/"
+layout: "district"
 ---
 
 # 青森 選挙区

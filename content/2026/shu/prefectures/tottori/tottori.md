@@ -1,6 +1,7 @@
 ---
 title: "鳥取"
 url: "/2026/shu/prefectures/tottori/"
+layout: "district"
 ---
 
 # 鳥取 選挙区

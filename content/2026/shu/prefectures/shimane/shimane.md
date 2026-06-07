@@ -1,6 +1,7 @@
 ---
 title: "島根"
 url: "/2026/shu/prefectures/shimane/"
+layout: "district"
 ---
 
 # 島根 選挙区

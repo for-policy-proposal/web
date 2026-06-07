@@ -1,6 +1,7 @@
 ---
 title: "群馬"
 url: "/2026/shu/prefectures/gunma/"
+layout: "district"
 ---
 
 # 群馬 選挙区

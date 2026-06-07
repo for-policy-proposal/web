@@ -1,6 +1,7 @@
 ---
 title: "広島"
 url: "/2026/shu/prefectures/hiroshima/"
+layout: "district"
 ---
 
 # 広島 選挙区

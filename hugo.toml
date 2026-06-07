@@ -30,7 +30,7 @@ pagination.pagerSize = 2000
 [[menu.main]]
     name = "ミスの報告"
     url = "https://forms.gle/kGAFfXspVisRCNRVA"
-    weight = 15
+    weight = 16
 
 [[menu.main]]
     name = "Archive"

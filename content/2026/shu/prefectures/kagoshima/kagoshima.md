@@ -1,6 +1,7 @@
 ---
 title: "鹿児島"
 url: "/2026/shu/prefectures/kagoshima/"
+layout: "district"
 ---
 
 # 鹿児島 選挙区

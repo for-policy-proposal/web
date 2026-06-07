@@ -1,6 +1,7 @@
 ---
 title: "愛媛"
 url: "/2026/shu/prefectures/ehime/"
+layout: "district"
 ---
 
 # 愛媛 選挙区

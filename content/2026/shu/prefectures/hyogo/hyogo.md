@@ -1,6 +1,7 @@
 ---
 title: "兵庫"
 url: "/2026/shu/prefectures/hyogo/"
+layout: "district"
 ---
 
 # 兵庫 選挙区

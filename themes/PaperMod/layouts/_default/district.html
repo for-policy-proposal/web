@@ -1,0 +1,41 @@
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+{{- $theme := site.Params.defaultTheme | default "auto" }}
+<html lang="{{ site.Language }}" data-theme="{{ $theme }}">
+
+<head>
+    {{- partial "head.html" . }}
+    {{ with (templates.Defer (dict "key" "global")) }}
+        {{ partial "css.html" . }}
+    {{ end }}
+</head>
+
+<body id="top">
+    {{ partialCached "header.html" . .Page -}}
+
+    <!-- メインコンテンツエリア -->
+    <div class="max-w-4xl mx-auto p-6 font-sans">
+      
+      <!-- ページタイトル（東京 選挙区 など） -->
+      <h1 class="text-3xl font-bold mb-6 text-base-content">{{ .Title }}</h1>
+
+      <!-- 💡 ここが魔法の処理：Markdownの箇条書きリンクを抽出し、daisyUIのボタンに変換してグリッド配置する -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 my-6">
+        {{- /* Markdown内のすべてのリンク（aタグ）を探してループ処理する */ -}}
+        {{- $html := .Content -}}
+        {{- $links := findRE `<a href="[^"]+">[^<]+</a>` $html -}}
+        
+        {{- range $links -}}
+          {{- /* 抽出したaタグにdaisyUIのクラスを無理やりねじ込む */ -}}
+          {{- $buttonLink := replace . "<a " `<a class="btn w-full" ` -}}
+          {{- $buttonLink | safeHTML -}}
+        {{- else -}}
+          <!-- 万が一、通常の文章があった場合のフォールバック（そのまま出す） -->
+          {{ .Content }}
+        {{- end -}}
+      </div>
+
+    </div>
+</body>
+</html>

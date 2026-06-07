@@ -1,6 +1,7 @@
 ---
 title: "岐阜"
 url: "/2026/shu/prefectures/gifu/"
+layout: "district"
 ---
 
 # 岐阜 選挙区

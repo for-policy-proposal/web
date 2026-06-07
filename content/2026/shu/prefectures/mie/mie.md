@@ -1,6 +1,7 @@
 ---
 title: "三重"
 url: "/2026/shu/prefectures/mie/"
+layout: "district"
 ---
 
 # 三重 選挙区

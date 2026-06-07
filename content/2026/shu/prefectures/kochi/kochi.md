@@ -1,6 +1,7 @@
 ---
 title: "高知"
 url: "/2026/shu/prefectures/kochi/"
+layout: "district"
 ---
 
 # 高知 選挙区

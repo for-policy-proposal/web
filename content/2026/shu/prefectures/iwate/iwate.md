@@ -1,6 +1,7 @@
 ---
 title: "岩手"
 url: "/2026/shu/prefectures/iwate/"
+layout: "district"
 ---
 
 # 岩手 選挙区

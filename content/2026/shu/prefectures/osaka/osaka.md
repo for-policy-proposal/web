@@ -1,6 +1,7 @@
 ---
 title: "大阪"
 url: "/2026/shu/prefectures/osaka/"
+layout: "district"
 ---
 
 # 大阪 選挙区

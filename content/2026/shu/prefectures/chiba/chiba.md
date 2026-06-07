@@ -1,6 +1,7 @@
 ---
 title: "千葉"
 url: "/2026/shu/prefectures/chiba/"
+layout: "district"
 ---
 
 # 千葉 選挙区

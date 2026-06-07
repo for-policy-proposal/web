@@ -1,6 +1,7 @@
 ---
 title: "和歌山"
 url: "/2026/shu/prefectures/wakayama/"
+layout: "district"
 ---
 
 # 和歌山 選挙区

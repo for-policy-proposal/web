@@ -1,6 +1,7 @@
 ---
 title: "福井"
 url: "/2026/shu/prefectures/fukui/"
+layout: "district"
 ---
 
 # 福井 選挙区

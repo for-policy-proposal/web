@@ -1,6 +1,7 @@
 ---
 title: "山梨"
 url: "/2026/shu/prefectures/yamanashi/"
+layout: "district"
 ---
 
 # 山梨 選挙区

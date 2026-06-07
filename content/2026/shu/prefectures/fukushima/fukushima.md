@@ -1,6 +1,7 @@
 ---
 title: "福島"
 url: "/2026/shu/prefectures/fukushima/"
+layout: "district"
 ---
 
 # 福島 選挙区

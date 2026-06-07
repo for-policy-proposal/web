@@ -1,6 +1,7 @@
 ---
 title: "長野"
 url: "/2026/shu/prefectures/nagano/"
+layout: "district"
 ---
 
 # 長野 選挙区
