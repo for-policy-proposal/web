@@ -221,6 +221,8 @@
           {{ else if eq $master.status "廃案" }}{{ $status_desc = "会期切れなどで法案が消滅しました" }}
           {{ else if eq $master.status "審議中" }}{{ $status_desc = "現在議会などで議論が行われています" }}
           {{ else if eq $master.status "妥協" }}{{ $status_desc = "条件を変更して部分的な合意に至りました" }}
+          {{ else if eq $master.status "調整中" }}{{ $status_desc = "実現に向けて関係各所との話し合いや準備が進められています" }}
+          {{ else if eq $master.status "方針決定" }}{{ $status_desc = "政府や党として、この公約を進める方針が正式に決定しました" }}
           {{ else }}{{ $status_desc = printf "%s: 状況を確認中" $master.status }}
           {{ end }}
 
@@ -291,7 +293,7 @@
             {{ $status_class = "badge-soft badge-warning" }} {{/* 🟠 オレンジ（黄） */}}
           {{ else if or (eq $master.status "否決") (eq $master.status "廃案") }}
             {{ $status_class = "badge-soft badge-error" }}   {{/* 🔴 赤 */}}
-          {{ else if or (eq $master.status "審議中") (eq $master.status "調整中") }}
+          {{ else if or (eq $master.status "審議中") (or (eq $master.status "調整中") (eq $master.status "方針決定")) }}
             {{ $status_class = "badge-soft badge-info" }}    {{/* 🔵 水色 */}}
           {{ else if eq $master.status "妥協" }}
             {{ $status_class = "badge-soft badge-primary" }} {{/* 🟣 紫 */}}
@@ -308,8 +310,11 @@
           {{ else if eq $master.status "廃案" }}{{ $status_desc = "会期切れなどで法案が消滅しました" }}
           {{ else if eq $master.status "審議中" }}{{ $status_desc = "現在議会などで議論が行われています" }}
           {{ else if eq $master.status "妥協" }}{{ $status_desc = "条件を変更して部分的な合意に至りました" }}
+          {{ else if eq $master.status "調整中" }}{{ $status_desc = "実現に向けて関係各所との話し合いや準備が進められています" }}
+          {{ else if eq $master.status "方針決定" }}{{ $status_desc = "政府や党として、この公約を進める方針が正式に決定しました" }}
           {{ else }}{{ $status_desc = printf "%s: 状況を確認中" $master.status }}
           {{ end }}
+
 
           {{/* 🔗 3. リンク（エビデンス）の有無でツールチップの文字を合体させる */}}
           {{ $tooltip_text := $status_desc }}
