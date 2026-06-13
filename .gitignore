@@ -11,5 +11,5 @@ old_stuff/
 draft.py
 output/api
 check_other_ai.py
-node_modules/
+#node_modules/
 public

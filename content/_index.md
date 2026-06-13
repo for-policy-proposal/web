@@ -5,7 +5,9 @@ title: "2026 衆議院選挙"
 
 # まだ東京のデータしかありません。
 
-
+<head>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="388f249f-cb7c-443c-b25a-515467637bc4"></script>
+</head>
 <!-- 何人の方に見ていただいたのか知りたい -->
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "232c493c56424060a15bf34be0407672"}'></script>
