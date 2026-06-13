@@ -1,6 +1,6 @@
 ---
 title: "公約の判定基準"
-url: "/draft-rubric"
+url: "/rubric"
 ---
 
 

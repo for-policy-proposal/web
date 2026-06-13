@@ -243,23 +243,32 @@
               <span class="badge badge-lg {{ $status_class }} text-sm font-bold px-3 py-4">
                 {{ $master.status | default "未確認" }}
               </span>
-
             </a>
           </div>
 
 
 
             <span class="pledge-title">{{ .title }}</span>
-            <div class="bg-base-200 border-l-3 border-black p-4 rounded-r-box italic mb-4">{{ .quote_text }}</div>
+           <!--- <div class="bg-base-200 border-l-3 border-black p-4 rounded-r-box italic mb-4">{{ .quote_text }}</div>-->
+
+
+
             <div class="collapse collapse-arrow bg-base-100 border-base-300 border">
               <input type="checkbox" class="peer" />
               <div class="collapse-title font-bold text-sm text-base-content">
-                公約と判定した理由
+                詳細
               </div>
               <div class="collapse-content text-sm">
-                <p>{{ .reason }}</p>
+                <p>公約の引用: {{ .quote_text }}</p>
+                <br>
+                <p>公約と判定した理由: {{.reason}}</p>
               </div>
             </div>
+
+
+
+
+
             <div class=" text-xs opacity-60 mt-4 mb-0">最終更新: {{ $master.last_updated }}</div>
           </div>
         {{ end }}
@@ -336,21 +345,25 @@
 
             </a>
           </div>
-
-
-
-
             <span class="pledge-title">{{ .title }}</span>
-            <div class="bg-base-200 border-l-3 border-black p-4 rounded-r-box italic mb-4">{{ .quote_text }}</div>
+           <!--- <div class="bg-base-200 border-l-3 border-black p-4 rounded-r-box italic mb-4">{{ .quote_text }}</div>-->
+
+
+
             <div class="collapse collapse-arrow bg-base-100 border-base-300 border">
               <input type="checkbox" class="peer" />
               <div class="collapse-title font-bold text-sm text-base-content">
-                公約と判定した理由
+                詳細
               </div>
               <div class="collapse-content text-sm">
-                <p>{{ .reason }}</p>
+                <p>公約の引用: {{ .quote_text }}</p>
+                <br>
+                <p>公約と判定した理由: {{.reason}}</p>
               </div>
             </div>
+
+
+
 
 
 
@@ -391,3 +404,19 @@
   {{ end }}
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // ページ内にある「最初のツールチップ要素」だけをピンポイントで取得
+    const firstTooltip = document.querySelector('.tooltip');
+    
+    if (firstTooltip) {
+      // 1. 最初だけ強制表示にする
+      firstTooltip.classList.add('tooltip-open');
+      
+   
+      setTimeout(() => {
+        firstTooltip.classList.remove('tooltip-open');
+      }, 1500);
+    }
+  });
+</script>
