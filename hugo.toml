@@ -124,3 +124,7 @@ pagination.pagerSize = 2000
     disableWatch = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
+
+[params]
+  defaultTheme = "light"
+  disableThemeToggle = true

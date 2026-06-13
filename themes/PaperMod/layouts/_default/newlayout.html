@@ -212,6 +212,7 @@
 
           {{/* 💬 2. ステータスに応じた「ホバー時の説明文」の設定 */}}
           {{ $status_desc := "" }}
+          {{ $status_desc := "" }}
           {{ if eq $master.status "実施済み" }}{{ $status_desc = "公約が実行されました" }}
           {{ else if eq $master.status "法案成立" }}{{ $status_desc = "提出された法案が成立しました" }}
           {{ else if eq $master.status "類似法案成立" }}{{ $status_desc = "目的が同じ別の法案が成立しました" }}
