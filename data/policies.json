@@ -1,4 +1,19 @@
 {
+  "policy_status_include": {
+    "status": "実施済み,法案成立,類似法案成立,未確認,停滞,否決,廃案,審議中,妥協,調整中,方針決定", 
+
+    "未確認": "公約発表以降、具体的な法案提出や予算要求などの公的な動きが一切確認できない状態",
+    "審議中": "法案が審議されている状態",
+    "調整中": "法案提出前の段階で、政府内や与党内での調整が行われている状態",
+    "停滞": "新たな動きが半年間確認できない状態",
+    "法案成立": "公約に合致する法案が、議会で可決・成立した状態",
+    "類似法案成立": "公約そのものではないが、異なる党の案や別のアプローチの類似法案が成立した状態",
+    "妥協": "法案は成立したが、他党との修正協議などにより、当初の公約とは内容が後退している状態",
+    "否決": "提出された法案が、議会の採決によって明確に拒絶された状態",
+    "廃案": "会期切れや解散により、審議が未了のまま法案そのものが消滅した状態",
+    "方針決定":"方針として決定され、実現に向けての行動が行われている段階。調整中ではないが実施されたとも言えない状況の際にこれを使用することを想定",
+    "実施済み": "法案の施行、または予算の執行が始まり、公約の内容が実際に社会で実行されている状態"
+  },
   "policy_001": {
     "title": "日本人の子供たちを対象とする留学支援制度の創設",
     "status": "未確認",
@@ -7,21 +22,21 @@
   },
   "policy_002": {
     "title": "対日外国投資委員会（日本版CFIUS）の創設",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "status": "法案成立",
+    "last_updated": "2026-06-10",
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015134921000"
   },
   "policy_003": {
     "title": "食品消費税のゼロ化",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015145071000"
   },
   "policy_004": {
     "title": "給付付き税額控除の導入",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015145571000"
   },
   "policy_005": {
     "title": "官邸に人権問題担当官ポストの新設",
@@ -49,27 +64,21 @@
   },
   "policy_009": {
     "title": "住宅ローン減税の床面積要件の緩和",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "status": "実施済み",
+    "last_updated": "2026-06-07",
+    "evidence": "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk2_000017.html"
   },
   "policy_010": {
     "title": "土地等の実質的支配者情報の把握と公開",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA0496Q0U6A600C2000000/"
   },
   "policy_011": {
     "title": "日本版DBSの導入",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_012": {
-    "title": "デジタルリテラシー教育の早期必修化",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.cfa.go.jp/policies/child-safety/efforts/koseibouhou"
   },
   "policy_013": {
     "title": "投機目的の不動産取得制限",
@@ -79,51 +88,59 @@
   },
   "policy_014": {
     "title": "燃料油価格の定額引下げ",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://nenryo-teigakuhikisage.go.jp/"
   },
   "policy_015": {
     "title": "憲法への「自衛隊」明記",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://newsdig.tbs.co.jp/articles/-/2589693"
   },
   "policy_016": {
     "title": "自衛隊員の給与水準引き上げ",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_017": {
-    "title": "AI・データサイエンス教育の早期必修化",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mod.go.jp/j/policy/agenda/meeting/jinji/pdf/giji_shoguu_10_02.pdf"
   },
   "policy_018": {
     "title": "税・社会保険料未納情報の共有および在留審査への活用",
-    "status": "未確認"
+    "status": "調整中",
+    "last_updated": "2026-05-05",
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA043SS0U5A101C2000000/"
   },
   "policy_019": {
     "title": "国土全域での土地実質的支配者情報の把握と公開",
-    "status": "未確認"
+    "status": "調整中",
+    "last_updated": "2026-05-05",
+    "evidence": "https://www.nikkei.com/article/DGKKZO96709250U6A600C2PD0000/"
   },
   "policy_020": {
     "title": "所得税減税",
-    "status": "未確認"
+    "status": "法案成立",
+    "last_updated": "2026-05-05",
+    "evidence": "https://www.nta.go.jp/users/gensen/2026kiso/index.htm"
   },
+
   "policy_021": {
     "title": "低所得者給付",
-    "status": "未確認"
+    "status": "調整中",
+    "last_updated": "2026-05-05",
+    "evidence": "https://www.jiji.com/jc/article?k=2026052700720&g=pol"
   },
+
   "policy_022": {
     "title": "価格転嫁ガイドラインの法的拘束力強化",
-    "status": "未確認"
+    "status": "未確認",
+    "last_updated": "2026-05-05",
+    "evidence": ""
   },
   "policy_023": {
     "title": "自衛隊員の給与水準および居住環境の改善",
-    "status": "未確認"
+    "status": "実施済み",
+    "last_updated": "2026-05-05",
+    "evidence": "https://www.mod.go.jp/j/profile/treatment/pdf/pamphlet.pdf"
   },
   "policy_024": {
     "title": "日本人の子供たち全員を対象とする留学支援制度の創設",
@@ -133,15 +150,15 @@
   },
   "policy_025": {
     "title": "国家情報局の創設",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.kantei.go.jp/jp/105/statement/2026/0527kaiken.html"
   },
   "policy_026": {
     "title": "帰化要件の厳格化",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.asahi.com/articles/ASV3W04WZV3WUTIL002M.html"
   },
   "policy_027": {
     "title": "消費税の廃止",
@@ -199,21 +216,15 @@
   },
   "policy_036": {
     "title": "ガソリン補助金の継続",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_037": {
-    "title": "子育て世帯への給付",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://nenryo-teigakuhikisage.go.jp/"
   },
   "policy_038": {
     "title": "暗号資産に関連する税制改正",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUB09CKI0Z00C26A4000000/"
   },
   "policy_039": {
     "title": "憲法改正の実施",
@@ -221,65 +232,29 @@
     "last_updated": "2026-05-05",
     "evidence": ""
   },
-  "policy_040": {
-    "title": "児童手当の所得制限撤廃",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_041": {
-    "title": "児童手当の支給対象の高校生までの拡大",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_042": {
-    "title": "児童手当における第3子以降の加算増額",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_043": {
-    "title": "子ども支援の所得制限撤廃",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
-  },
   "policy_044": {
     "title": "「防衛三文書」の改定",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA2555Q0V20C26A5000000/"
   },
   "policy_045": {
     "title": "スパイ防止法の制定",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_046": {
-    "title": "所得税および住民税の減税",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.asahi.com/articles/ASV2J41K6V2JUTFK00FM.html"
   },
   "policy_047": {
     "title": "ガソリン税などの暫定税率廃止",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_048": {
-    "title": "原子力の再稼働",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015016951000"
   },
   "policy_049": {
     "title": "国会議員の定数削減法案の提出",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jimin.jp/news/information/213452.html"
   },
   "policy_050": {
     "title": "憲法への自衛隊明記と憲法改正",
@@ -289,9 +264,9 @@
   },
   "policy_051": {
     "title": "仕入税額控除が可能な0％税率の導入",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260515/03_siryou3.pdf"
   },
   "policy_052": {
     "title": "憲法への合区解消（各都道府県から必ず1人は参議院議員を選出）の明記",
@@ -301,15 +276,15 @@
   },
   "policy_053": {
     "title": "憲法への緊急事態条項の新設",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.asahi.com/articles/ASV5D2VHPV5DUTFK00LM.html"
   },
   "policy_054": {
     "title": "憲法への「自衛隊の保持」明記",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA173G50X10C26A4000000/"
   },
   "policy_055": {
     "title": "憲法への「教育の充実に向けた環境整備を行う旨」の明記",
@@ -319,9 +294,9 @@
   },
   "policy_056": {
     "title": "憲法9条改正",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA173G50X10C26A4000000/"
   },
   "policy_057": {
     "title": "選択的夫婦別姓",
@@ -329,23 +304,17 @@
     "last_updated": "2026-05-05",
     "evidence": ""
   },
-  "policy_058": {
-    "title": "防衛費GDP比2%",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
-  },
   "policy_059": {
     "title": "憲法9条の改正と自衛隊の明記",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA173G50X10C26A4000000/"
   },
   "policy_060": {
     "title": "裁量労働時間制の適用拡大",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA213E30R20C26A4000000/"
   },
   "policy_061": {
     "title": "中小企業における経営者の個人保証の廃止",
@@ -359,23 +328,17 @@
     "last_updated": "2026-05-05",
     "evidence": ""
   },
-  "policy_063": {
-    "title": "自衛隊法の改正",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
-  },
   "policy_064": {
     "title": "武器輸出の開始",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA152T50V10C26A5000000/"
   },
   "policy_065": {
     "title": "能動的サイバー防御の法制化",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA0991H0Z00C26A1000000/"
   },
   "policy_066": {
     "title": "子育て・教育・障害福祉の所得制限を撤廃",
@@ -391,9 +354,9 @@
   },
   "policy_068": {
     "title": "消費税の廃止または5％への減税",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.cas.go.jp/jp/seisaku/kokuminkaigi/contents/20260515/03_siryou3.pdf"
   },
   "policy_069": {
     "title": "一律の現金給付",
@@ -421,15 +384,15 @@
   },
   "policy_073": {
     "title": "帰化の居住要件の10年以上への引き上げ",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.asahi.com/articles/ASV3W04WZV3WUTIL002M.html"
   },
   "policy_074": {
     "title": "在留外国人向けの学習プログラム創設と永住条件等の厳格化",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.asahi.com/articles/ASV6932JCV69UTFK00CM.html"
   },
   "policy_075": {
     "title": "外国ルーツの子ども向けプレスクールの国による設置",
@@ -439,9 +402,9 @@
   },
   "policy_076": {
     "title": "不動産登記への国籍記入の義務付け",
-    "status": "未確認",
+    "status": "方針決定",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jiji.com/jc/article?k=2026032701163&g=pol"
   },
   "policy_077": {
     "title": "在留資格や帰化の条件への日本語能力試験結果の追加",
@@ -451,9 +414,9 @@
   },
   "policy_078": {
     "title": "旧姓使用の法制化",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.sankei.com/article/20260512-GNGLEMRQYRN47ABLFVO4QUGWHU/"
   },
   "policy_079": {
     "title": "3人以上多子世帯の教育関連費用の完全無償化",
@@ -487,21 +450,21 @@
   },
   "policy_084": {
     "title": "紙の約束手形の廃止",
-    "status": "未確認",
+    "status": "方針決定",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.fsa.go.jp/policy/tegatakogitte/tegatakogitte.html"
   },
   "policy_085": {
     "title": "看護師・介護福祉士・保育士・幼稚園教諭の公的価格引上げ",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mhlw.go.jp/content/12400000/001706378.pdf"
   },
   "policy_086": {
     "title": "「メディア芸術ナショナルセンター」の設置",
-    "status": "未確認",
+    "status": "方針決定",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.bunka.go.jp/koho_hodo_oshirase/hodohappyo/pdf/94373301_03.pdf"
   },
   "policy_087": {
     "title": "通院付き添いへの介護休暇の適用拡大",
@@ -517,15 +480,9 @@
   },
   "policy_089": {
     "title": "食品と消費税の減税",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
-  },
-  "policy_090": {
-    "title": "収入に応じた負担割合となる制度への変更",
-    "status": "未確認",
-    "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA100CZ0Q6A610C2000000/"
   },
   "policy_091": {
     "title": "外国人定住者や永住権の付与基準緩和および関連法の整備",
@@ -547,15 +504,15 @@
   },
   "policy_094": {
     "title": "給特法の改正",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mext.go.jp/b_menu/hakusho/mext_00026.html"
   },
   "policy_095": {
     "title": "所得税基礎控除の引上げ",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nta.go.jp/users/gensen/2026kiso/index.htm"
   },
   "policy_096": {
     "title": "社会保険料引下げ",
@@ -571,9 +528,9 @@
   },
   "policy_098": {
     "title": "物価上昇に応じた所得税基礎控除の引上げ",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_01.htm"
   },
   "policy_099": {
     "title": "生活支援デジタル給付の制度化",
@@ -583,9 +540,9 @@
   },
   "policy_100": {
     "title": "消費税の0%化",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.asahi.com/articles/ASV461JLGV46ULFA00FM.html"
   },
   "policy_101": {
     "title": "企業献金の禁止",
@@ -613,9 +570,9 @@
   },
   "policy_105": {
     "title": "政治資金に関する第三者機関の立ち上げ",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.soumu.go.jp/main_content/001008217.pdf"
   },
   "policy_106": {
     "title": "憲法改正の国民投票の実施",
@@ -631,15 +588,15 @@
   },
   "policy_108": {
     "title": "防災庁の設置",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA182SM0Y6A510C2000000/"
   },
   "policy_109": {
     "title": "皇室典範の改正",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015146471000"
   },
   "policy_110": {
     "title": "20兆円のGX移行債の創設",
@@ -655,21 +612,21 @@
   },
   "policy_112": {
     "title": "「宇宙庁」の設立",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jimin.jp/news/policy/213434.html"
   },
   "policy_113": {
     "title": "食料品の消費税ゼロ（2年間）",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jiji.com/jc/article?k=2026011900646&g=pol"
   },
   "policy_114": {
     "title": "複数年度予算への移行",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jimin.jp/news/information/212553.html"
   },
   "policy_115": {
     "title": "規制クリア原発の再稼働",
@@ -685,27 +642,27 @@
   },
   "policy_117": {
     "title": "外国人の受け入れ人数への上限設定",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nikkei.com/article/DGXZQOUA2307B0T20C26A1000000/"
   },
   "policy_118": {
     "title": "年収の壁の引き上げ",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mof.go.jp/tax_policy/tax_reform/outline/fy2026/08taikou_01.htm"
   },
   "policy_119": {
     "title": "高校の授業料無償化",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mext.go.jp/a_menu/shotou/mushouka/index.htm"
   },
   "policy_120": {
     "title": "小学校給食の無償化",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mext.go.jp/a_menu/sports/syokuiku/kyu-lighten.html"
   },
   "policy_121": {
     "title": "政府全体で1兆円規模の中小事業者支援",
@@ -721,27 +678,27 @@
   },
   "policy_123": {
     "title": "「年収の壁」見直しに伴う所得減税",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.kantei.go.jp/jp/headline/nennsyuunokabe/index.html"
   },
   "policy_124": {
     "title": "子育て応援手当の支給",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.cfa.go.jp/policies/kokoseido/kosodate-ouenteate"
   },
   "policy_125": {
     "title": "対外情報機関の設置",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015133391000"
   },
   "policy_126": {
     "title": "「防衛三文書」の前倒し改定",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.mod.go.jp/j/policy/agenda/meeting/henkaku/index.html"
   },
   "policy_127": {
     "title": "最低賃金の業種毎の法改正",
@@ -763,9 +720,9 @@
   },
   "policy_130": {
     "title": "日本の情報機関の集約",
-    "status": "未確認",
+    "status": "法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://news.web.nhk/newsweb/na/na-k10015133391000"
   },
   "policy_131": {
     "title": "供託金の引き下げ",
@@ -787,9 +744,9 @@
   },
   "policy_134": {
     "title": "こども誰でも通園制度の創設",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.cfa.go.jp/policies/hoiku/daredemo-tsuen"
   },
   "policy_135": {
     "title": "贈与税減税",
@@ -799,9 +756,9 @@
   },
   "policy_136": {
     "title": "医療・介護職の報酬増",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jil.go.jp/kokunai/blt/backnumber/2026/03/shunto_02.html"
   },
   "policy_137": {
     "title": "「子育てケアマネ」の創設",
@@ -811,33 +768,33 @@
   },
   "policy_138": {
     "title": "強制送還の対象罪拡大",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.yomiuri.co.jp/politics/20260120-GYT1T00432/"
   },
   "policy_139": {
     "title": "公営住宅入居者の国籍把握",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.sankei.com/article/20260213-J6TMQXNL5FEFPNMS3S6DKRHRG4/"
   },
   "policy_140": {
     "title": "日本の文化やルールを学ぶプログラムの創設",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.jiji.com/jc/article?k=2026042800877&g=pol"
   },
   "policy_141": {
     "title": "在職老齢年金制度の廃止",
-    "status": "未確認",
+    "status": "類似法案成立",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.nenkin.go.jp/tokusetsu/zairoukaisei.html"
   },
   "policy_142": {
     "title": "電気代補助の継続",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-05-05",
-    "evidence": ""
+    "evidence": "https://www.enecho.meti.go.jp/category/gekihen_lp/"
   },
   "policy_143": {
     "title": "マクロ経済スライドの廃止",
@@ -853,9 +810,9 @@
   },
   "policy_145": {
     "title": "AI導入一括補助金の創設",
-    "status": "未確認",
+    "status": "実施済み",
     "last_updated": "2026-06-06",
-    "evidence": ""
+    "evidence": "https://it-shien.smrj.go.jp/about/"
   },
   "policy_146": {
     "title": "末子が成人するまで継続する長期住宅ローン減税の導入",
@@ -865,8 +822,8 @@
   },
   "policy_147": {
     "title": "ベビーシッター・家事代行サービス利用代金の減税対象化",
-    "status": "未確認",
+    "status": "調整中",
     "last_updated": "2026-06-06",
-    "evidence": ""
+    "evidence": "https://www.yomiuri.co.jp/politics/20260430-GYT1T00336/"
   }
 }

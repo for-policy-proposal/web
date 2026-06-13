@@ -15,8 +15,6 @@
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -2056,6 +2054,12 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-100 {
+    margin-bottom: calc(var(--spacing) * 100);
+  }
   .status {
     @layer daisyui.l1.l2.l3 {
       display: inline-block;
@@ -2184,6 +2188,9 @@
   .table {
     display: table;
   }
+  .h-auto {
+    height: auto;
+  }
   .btn-wide {
     @layer daisyui.l1.l2 {
       width: 100%;
@@ -2216,6 +2223,9 @@
         outline-offset: 2px;
       }
     }
+  }
+  .cursor-default {
+    cursor: default;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -2351,6 +2361,24 @@
       --badge-fg: var(--color-error-content);
     }
   }
+  .badge-info {
+    @layer daisyui.l1.l2 {
+      --badge-color: var(--color-info);
+      --badge-fg: var(--color-info-content);
+    }
+  }
+  .badge-neutral {
+    @layer daisyui.l1.l2 {
+      --badge-color: var(--color-neutral);
+      --badge-fg: var(--color-neutral-content);
+    }
+  }
+  .badge-primary {
+    @layer daisyui.l1.l2 {
+      --badge-color: var(--color-primary);
+      --badge-fg: var(--color-primary-content);
+    }
+  }
   .badge-success {
     @layer daisyui.l1.l2 {
       --badge-color: var(--color-success);
@@ -2362,6 +2390,10 @@
       --badge-color: var(--color-warning);
       --badge-fg: var(--color-warning-content);
     }
+  }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
   }
   .sm\:grid-cols-3 {
     @media (width >= 40rem) {

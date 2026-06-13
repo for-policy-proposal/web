@@ -194,18 +194,47 @@
             
 
 
-            
-
           {{ $has_evidence := and (isset $master "evidence") (ne $master.evidence "") }}
-          {{ $status_class := "" }}
-          {{ if eq $master.status "実施済み" }}{{ $status_class = "badge-soft badge-success" }}
-          {{- else if eq $master.status "未確認" }}{{ $status_class = "badge-soft badge-warning" }}
-          {{- else }}{{ $status_class = "badge-soft badge-error" }}{{ end }}
+          
+          {{/* 🎨 1. ステータスに応じた「色（daisyUIクラス）」の設定 */}}
+          {{ $status_class := "badge-soft badge-neutral" }} {{/* どれにも当てはまらない場合のフォールバック */}}
+          {{ if or (eq $master.status "実施済み") (eq $master.status "法案成立") (eq $master.status "類似法案成立") }}
+            {{ $status_class = "badge-soft badge-success" }} {{/* 🟢 緑 */}}
+          {{ else if or (eq $master.status "未確認") (eq $master.status "停滞") }}
+            {{ $status_class = "badge-soft badge-warning" }} {{/* 🟠 オレンジ（黄） */}}
+          {{ else if or (eq $master.status "否決") (eq $master.status "廃案") }}
+            {{ $status_class = "badge-soft badge-error" }}   {{/* 🔴 赤 */}}
+          {{ else if or (eq $master.status "審議中") (or (eq $master.status "調整中") (eq $master.status "方針決定")) }}
+            {{ $status_class = "badge-soft badge-info" }}    {{/* 🔵 水色 */}}
+          {{ else if eq $master.status "妥協" }}
+            {{ $status_class = "badge-soft badge-primary" }} {{/* 🟣 紫 */}}
+          {{ end }}
 
+          {{/* 💬 2. ステータスに応じた「ホバー時の説明文」の設定 */}}
+          {{ $status_desc := "" }}
+          {{ if eq $master.status "実施済み" }}{{ $status_desc = "公約が実行されました" }}
+          {{ else if eq $master.status "法案成立" }}{{ $status_desc = "提出された法案が成立しました" }}
+          {{ else if eq $master.status "類似法案成立" }}{{ $status_desc = "目的が同じ別の法案が成立しました" }}
+          {{ else if eq $master.status "未確認" }}{{ $status_desc = "行動が見つかっていません" }}
+          {{ else if eq $master.status "停滞" }}{{ $status_desc = "議論や手続きがストップしています" }}
+          {{ else if eq $master.status "否決" }}{{ $status_desc = "議会で否決されました" }}
+          {{ else if eq $master.status "廃案" }}{{ $status_desc = "会期切れなどで法案が消滅しました" }}
+          {{ else if eq $master.status "審議中" }}{{ $status_desc = "現在議会などで議論が行われています" }}
+          {{ else if eq $master.status "妥協" }}{{ $status_desc = "条件を変更して部分的な合意に至りました" }}
+          {{ else }}{{ $status_desc = printf "%s: 状況を確認中" $master.status }}
+          {{ end }}
+
+          {{/* 🔗 3. リンク（エビデンス）の有無でツールチップの文字を合体させる */}}
+          {{ $tooltip_text := $status_desc }}
+          {{ if $has_evidence }}
+            {{ $tooltip_text = printf "%s（クリックで根拠を確認）" $status_desc }}
+          {{ end }}
+
+         {{/* ✨ 4. HTML出力部分 */}}
           <div class="mb-3">
             <a {{ if $has_evidence }}href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer"{{ end }} 
-              class="inline-flex items-center no-underline {{ if $has_evidence }}tooltip tooltip-top cursor-pointer{{ else }}pointer-events-none{{ end }}"
-              {{ if $has_evidence }}data-tip="根拠を確認"{{ end }}>
+               class="inline-flex items-center no-underline tooltip tooltip-top {{ if $has_evidence }}cursor-pointer{{ else }}cursor-default select-none{{ end }}"
+               data-tip="{{ $tooltip_text }}">
               
               <span class="badge badge-lg {{ $status_class }} text-sm font-bold px-3 py-4">
                 {{ $master.status | default "未確認" }}
@@ -213,8 +242,6 @@
 
             </a>
           </div>
-
-
 
 
 
@@ -255,15 +282,46 @@
 
 
           {{ $has_evidence := and (isset $master "evidence") (ne $master.evidence "") }}
-          {{ $status_class := "" }}
-          {{ if eq $master.status "実施済み" }}{{ $status_class = "badge-soft badge-success" }}
-          {{- else if eq $master.status "未確認" }}{{ $status_class = "badge-soft badge-warning" }}
-          {{- else }}{{ $status_class = "badge-soft badge-error" }}{{ end }}
+          
+          {{/* 🎨 1. ステータスに応じた「色（daisyUIクラス）」の設定 */}}
+          {{ $status_class := "badge-soft badge-neutral" }} {{/* どれにも当てはまらない場合のフォールバック */}}
+          {{ if or (eq $master.status "実施済み") (eq $master.status "法案成立") (eq $master.status "類似法案成立") }}
+            {{ $status_class = "badge-soft badge-success" }} {{/* 🟢 緑 */}}
+          {{ else if or (eq $master.status "未確認") (eq $master.status "停滞") }}
+            {{ $status_class = "badge-soft badge-warning" }} {{/* 🟠 オレンジ（黄） */}}
+          {{ else if or (eq $master.status "否決") (eq $master.status "廃案") }}
+            {{ $status_class = "badge-soft badge-error" }}   {{/* 🔴 赤 */}}
+          {{ else if or (eq $master.status "審議中") (eq $master.status "調整中") }}
+            {{ $status_class = "badge-soft badge-info" }}    {{/* 🔵 水色 */}}
+          {{ else if eq $master.status "妥協" }}
+            {{ $status_class = "badge-soft badge-primary" }} {{/* 🟣 紫 */}}
+          {{ end }}
 
+          {{/* 💬 2. ステータスに応じた「ホバー時の説明文」の設定 */}}
+          {{ $status_desc := "" }}
+          {{ if eq $master.status "実施済み" }}{{ $status_desc = "公約が実行されました" }}
+          {{ else if eq $master.status "法案成立" }}{{ $status_desc = "提出された法案が成立しました" }}
+          {{ else if eq $master.status "類似法案成立" }}{{ $status_desc = "目的が同じ別の法案が成立しました" }}
+          {{ else if eq $master.status "未確認" }}{{ $status_desc = "行動が見つかっていません" }}
+          {{ else if eq $master.status "停滞" }}{{ $status_desc = "議論や手続きがストップしています" }}
+          {{ else if eq $master.status "否決" }}{{ $status_desc = "議会で否決されました" }}
+          {{ else if eq $master.status "廃案" }}{{ $status_desc = "会期切れなどで法案が消滅しました" }}
+          {{ else if eq $master.status "審議中" }}{{ $status_desc = "現在議会などで議論が行われています" }}
+          {{ else if eq $master.status "妥協" }}{{ $status_desc = "条件を変更して部分的な合意に至りました" }}
+          {{ else }}{{ $status_desc = printf "%s: 状況を確認中" $master.status }}
+          {{ end }}
+
+          {{/* 🔗 3. リンク（エビデンス）の有無でツールチップの文字を合体させる */}}
+          {{ $tooltip_text := $status_desc }}
+          {{ if $has_evidence }}
+            {{ $tooltip_text = printf "%s（クリックで根拠を確認）" $status_desc }}
+          {{ end }}
+
+         {{/* ✨ 4. HTML出力部分 */}}
           <div class="mb-3">
             <a {{ if $has_evidence }}href="{{ $master.evidence }}" target="_blank" rel="noopener noreferrer"{{ end }} 
-              class="inline-flex items-center no-underline {{ if $has_evidence }}tooltip tooltip-top cursor-pointer{{ else }}pointer-events-none{{ end }}"
-              {{ if $has_evidence }}data-tip="根拠を確認"{{ end }}>
+               class="inline-flex items-center no-underline tooltip tooltip-top {{ if $has_evidence }}cursor-pointer{{ else }}cursor-default select-none{{ end }}"
+               data-tip="{{ $tooltip_text }}">
               
               <span class="badge badge-lg {{ $status_class }} text-sm font-bold px-3 py-4">
                 {{ $master.status | default "未確認" }}
