@@ -180,9 +180,39 @@
   {{ $districtData := index site.Data $year $type $pref $filename }}
   {{ if $districtData }}
     {{ $candidate := index $districtData.candidates 0 }}
-
+  
+  
+  
     <header class="candidate-header">
-      <div class="candidate-party">{{ $candidate.party }}</div>
+      {{/* 💡 1. 47都道府県のアルファベット表記を日本語に変換するマップ */}}
+      {{ $pref_ja_map := dict 
+        "hokkaido" "北海道" "aomori" "青森" "iwate" "岩手" "miyagi" "宮城" "akita" "秋田" "yamagata" "山形" "fukushima" "福島"
+        "ibaraki" "茨城" "tochigi" "栃木" "gunma" "群馬" "saitama" "埼玉" "chiba" "千葉" "tokyo" "東京" "kanagawa" "神奈川"
+        "niigata" "新潟" "toyama" "富山" "ishikawa" "石川" "fukui" "福井" "yamanashi" "山梨" "nagano" "長野" "gifu" "岐阜" "shizuoka" "静岡" "aichi" "愛知"
+        "mie" "三重" "shiga" "滋賀" "kyoto" "京都" "osaka" "大阪" "hyogo" "兵庫" "nara" "奈良" "wakayama" "和歌山"
+        "tottori" "鳥取" "shimane" "島根" "okayama" "岡山" "hiroshima" "広島" "yamaguchi" "山口"
+        "tokushima" "徳島" "kagawa" "香川" "ehime" "愛媛" "kochi" "高知"
+        "fukuoka" "福岡" "saga" "佐賀" "nagasaki" "長崎" "kumamoto" "熊本" "oita" "大分" "miyazaki" "宮崎" "kagoshima" "鹿児島" "okinawa" "沖縄"
+      }}
+      {{ $pref_ja := index $pref_ja_map $pref | default $pref }}
+
+      {{/* 💡 2. gap-6（24px）に広げ、flexで横並びを強制 */}}
+      <div class="flex items-center gap-6 mb-2 md:text-base">
+        <span class="text-slate-500">{{ $candidate.party }}</span>
+        
+        {{/* 💡 区切り線としてスラッシュを配置 */}}
+        <span class="text-slate-300 select-none">/</span>
+        
+        {{/* 💡 選挙区の文字色を少し変えてメリハリをつける（paddingは不要になったので削除） */}}
+        <span class="font-medium text-slate-600">
+          {{ if $candidate.district_name }}
+            {{ $candidate.district_name }}
+          {{ else }}
+            {{ $pref_ja }}{{ $num_raw }}区
+          {{ end }}
+        </span>
+      </div>
+
       <h1 class="candidate-name">{{ $candidate.name }} 議員</h1>
     </header>
 
@@ -359,6 +389,8 @@
                 <p>公約の引用: {{ .quote_text }}</p>
                 <br>
                 <p>公約と判定した理由: {{.reason}}</p>
+                <br>
+                <p><a href="{{ .sources }}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></p>
               </div>
             </div>
 
@@ -367,7 +399,7 @@
 
 
 
-            <div><a href="{{ .sources }}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></div>
+            <!--<div><a href="{{ .sources }}" target="_blank" style="color: #2563eb; text-decoration: underline;" >ソース</a></div>-->
             <div class=" text-xs opacity-60 mt-4 mb-0">最終更新: {{ $master.last_updated }}</div>
           </div>
         {{ end }}
@@ -391,10 +423,16 @@
           </div>
         {{ end }}
       </div>
-      <a href="{{ $pdf_path }}" class="btn mt-4 btn-wide mx-auto block text-center flex items-center justify-center" target="_blank">
+      <a href="{{ $pdf_path }}" class="btn mt-4 mb-4 btn-wide mx-auto block text-center flex items-center justify-center" target="_blank">
         <i class="fas fa-file-pdf"></i> 原本PDFを表示
       </a>
     </section>
+
+ 
+      <a class="btn btn-wide mx-auto flex items-center justify-center" href="/{{ $year }}/{{ $type }}/prefectures/{{ $pref }}/">
+        ＜ 都道府県のページに戻る
+      </a>
+  
 
 
 
