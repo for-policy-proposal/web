@@ -23,17 +23,17 @@
       <h1 class="text-3xl font-bold mb-6 text-base-content">{{ .Title }}</h1>
 
       <!-- 💡 ここが魔法の処理：Markdownの箇条書きリンクを抽出し、daisyUIのボタンに変換してグリッド配置する -->
+      <!-- 💡 修正版：グリッド配置エリア -->
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 my-6">
-        {{- /* Markdown内のすべてのリンク（aタグ）を探してループ処理する */ -}}
         {{- $html := .Content -}}
-        {{- $links := findRE `<a href="[^"]+">[^<]+</a>` $html -}}
+        {{- /* 📝 正規表現を修正：aタグの中に別のタグや改行が含まれても抽出できるようにする */ -}}
+        {{- $links := findRE `<a href="[^"]+">[\s\S]+?</a>` $html -}}
         
         {{- range $links -}}
-          {{- /* 抽出したaタグにdaisyUIのクラスを無理やりねじ込む */ -}}
-          {{- $buttonLink := replace . "<a " `<a class="btn w-full" ` -}}
+          {{- /* 📝 クラスを追加：flex-col（縦並び）, h-auto（高さ自動）, py-3（上下パディング） */ -}}
+          {{- $buttonLink := replace . "<a " `<a class="btn w-full flex-col h-auto py-2 items-center justify-center text-center" ` -}}
           {{- $buttonLink | safeHTML -}}
         {{- else -}}
-          <!-- 万が一、通常の文章があった場合のフォールバック（そのまま出す） -->
           {{ .Content }}
         {{- end -}}
       </div>
